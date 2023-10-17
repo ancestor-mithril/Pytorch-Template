@@ -13,9 +13,9 @@ defaults:
   - metrics@train_metrics: [acc_ce] 
   - metrics@val_metrics: [acc_ce] 
   - metrics@solver_metrics: [solver] 
-  - model: PreResNet56
+  - model: PreResNet20
   - optimizer: sgd 
-  - scheduler: StaticScheduler
+  - scheduler: StepBS
   - override hydra/sweeper: basic   # nevergrad | basic
   - override hydra/launcher: basic
 

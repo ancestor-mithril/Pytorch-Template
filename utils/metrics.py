@@ -309,7 +309,9 @@ class Batch_Size(object):
         if self.mode == 'train':
             if solver.train_loader.batch_sampler is not None:
                 return solver.train_loader.batch_sampler.batch_size
-            return solver.train_loader.dataset.dataset.batch_size
+            if solver.train_loader.batch_size is not None:
+                return solver.train_loader.batch_size
+            raise NotImplementedError("Not implemented 1")
         elif self.mode == 'val':
             return solver.val_loader.batch_sampler.batch_size
         elif self.mode == 'test':

@@ -10,3 +10,8 @@
   parameters:
   aggregator:
   levels: ['epoch']
+
+"Batch Size":
+  parameters:
+  aggregator:
+  levels: [ 'epoch' ]

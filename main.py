@@ -114,7 +114,11 @@ class Solver:
 
     def init_scheduler(self):
         # TODO: Implement many schedulers (list of schedulers)
-        self.scheduler, self.scheduler_name = init_scheduler(self.args.scheduler, self.optimizer)
+
+        # self.scheduler_name = "StepLR"
+        # self.scheduler = StepLR(self.optimizer, step_size=30, gamma=0.5)
+
+        self.scheduler, self.scheduler_name = init_scheduler(self.args.scheduler, self.optimizer, self.train_loader)
 
     def init_criterion(self):
         self.criterion = init_criterion(self.args.loss, self.device, hasattr(self.args, "dba"))
@@ -503,7 +507,7 @@ class Solver:
             predictions.extend(output.detach().cpu())
             targets.extend(target.cpu())
 
-            self.save_batch_metrics(output, target, "train")
+            # self.save_batch_metrics(output, target, "train")
 
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,
@@ -557,7 +561,7 @@ class Solver:
             while self.epoch < self.args.epochs:
                 logging.info(f"===> epoch: {self.epoch}/{self.args.epochs}")
 
-                train_results = self.train()
+                train_results = self.simple_train()
 
                 metrics_results = {}
                 metrics_results = register_metrics(self.metrics, "train", "epoch", metrics_results, **train_results)
@@ -600,7 +604,8 @@ class Solver:
         return ret
 
     def save_backup(self):
-        raise NotImplementedError("TODO")
+        # raise NotImplementedError("TODO")
+        pass
 
 
 if __name__ == "__main__":

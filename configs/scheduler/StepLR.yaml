@@ -1,0 +1,9 @@
+# @package scheduler
+
+name: StepLR
+
+StepLR:
+  step_size: 30
+  gamma: 0.5
+
+type: lr_scheduler
