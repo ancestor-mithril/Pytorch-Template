@@ -1,0 +1,9 @@
+# @package scheduler
+
+name: CosineAnnealingBS
+
+CosineAnnealingBS:
+  total_iters: 300
+  max_batch_size: 320
+
+type: bs_scheduler

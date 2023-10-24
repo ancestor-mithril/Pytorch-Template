@@ -15,13 +15,13 @@ defaults:
   - metrics@solver_metrics: [solver] 
   - model: PreResNet20
   - optimizer: sgd 
-  - scheduler: StepBS
+  - scheduler: CosineAnnealingLR
   - override hydra/sweeper: basic   # nevergrad | basic
   - override hydra/launcher: basic
 
 restart_from_backup: False  # TODO: Use restart from backup everywhere
 
-aux_save_dir: 'baseline'
+aux_save_dir: '${scheduler.name}'
 storage_dir: "${oc.env:TENSOR_RELOADED_DATADIR}"
 save_dir: "${train_dataset.name}/${model.name}/${aux_save_dir}/${seed}"
 

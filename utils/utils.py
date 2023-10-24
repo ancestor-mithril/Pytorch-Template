@@ -43,5 +43,5 @@ def to_device(data: Tensor | Sequence[Tensor] | Dict[str, Tensor], device):
     if isinstance(data, (list, tuple)):
         return [to_device(x, device) for x in data]
     if isinstance(data, dict):
-        return {key : to_device(value, device) for key, value in data.items()}
+        return {key: to_device(value, device) for key, value in data.items()}
     raise NotImplementedError(f"Not implemented for {type(data)}")
