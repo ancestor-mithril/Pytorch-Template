@@ -1,0 +1,1019 @@
+[2023-11-06 20:30:04,540][root][INFO] - Saving current code to C:\Users\GeorgeS\Documents\facultate\master\projects\Pytorch-Template\outputs\2023-11-06\20-30-04\runs\CIFAR-10/PreResNet/CyclicBS\2525
+[2023-11-06 20:30:04,733][root][INFO] - Loading train_dataset!
+[2023-11-06 20:30:31,787][root][INFO] - Loading val_dataset!
+[2023-11-06 20:30:37,867][root][INFO] - ===> epoch: 1/300
+[2023-11-06 20:30:37,867][root][INFO] - train:
+[2023-11-06 20:31:24,604][root][INFO] - val:
+[2023-11-06 20:31:28,116][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_1_0.39329999685287476.pth
+[2023-11-06 20:31:28,117][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.39330
+[2023-11-06 20:31:28,117][root][INFO] - ===> epoch: 2/300
+[2023-11-06 20:31:28,118][root][INFO] - train:
+[2023-11-06 20:32:16,554][root][INFO] - val:
+[2023-11-06 20:32:18,189][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_2_0.4659000039100647.pth
+[2023-11-06 20:32:18,190][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.46590
+[2023-11-06 20:32:18,190][root][INFO] - ===> epoch: 3/300
+[2023-11-06 20:32:18,191][root][INFO] - train:
+[2023-11-06 20:33:06,529][root][INFO] - val:
+[2023-11-06 20:33:08,020][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_3_0.5339000225067139.pth
+[2023-11-06 20:33:08,021][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.53390
+[2023-11-06 20:33:08,022][root][INFO] - ===> epoch: 4/300
+[2023-11-06 20:33:08,022][root][INFO] - train:
+[2023-11-06 20:33:57,476][root][INFO] - val:
+[2023-11-06 20:33:58,972][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_4_0.5541999936103821.pth
+[2023-11-06 20:33:58,973][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.55420
+[2023-11-06 20:33:58,974][root][INFO] - ===> epoch: 5/300
+[2023-11-06 20:33:58,974][root][INFO] - train:
+[2023-11-06 20:34:49,279][root][INFO] - val:
+[2023-11-06 20:34:50,785][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_5_0.6208000183105469.pth
+[2023-11-06 20:34:50,785][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.62080
+[2023-11-06 20:34:50,786][root][INFO] - ===> epoch: 6/300
+[2023-11-06 20:34:50,787][root][INFO] - train:
+[2023-11-06 20:35:41,815][root][INFO] - val:
+[2023-11-06 20:35:43,322][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_6_0.6341999769210815.pth
+[2023-11-06 20:35:43,323][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.63420
+[2023-11-06 20:35:43,324][root][INFO] - ===> epoch: 7/300
+[2023-11-06 20:35:43,324][root][INFO] - train:
+[2023-11-06 20:36:37,656][root][INFO] - val:
+[2023-11-06 20:36:39,367][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_7_0.6539999842643738.pth
+[2023-11-06 20:36:39,367][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.65400
+[2023-11-06 20:36:39,368][root][INFO] - ===> epoch: 8/300
+[2023-11-06 20:36:39,369][root][INFO] - train:
+[2023-11-06 20:37:37,034][root][INFO] - val:
+[2023-11-06 20:37:38,536][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_8_0.6712999939918518.pth
+[2023-11-06 20:37:38,536][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.67130
+[2023-11-06 20:37:38,537][root][INFO] - ===> epoch: 9/300
+[2023-11-06 20:37:38,537][root][INFO] - train:
+[2023-11-06 20:38:41,634][root][INFO] - val:
+[2023-11-06 20:38:43,077][root][INFO] - ===> epoch: 10/300
+[2023-11-06 20:38:43,077][root][INFO] - train:
+[2023-11-06 20:40:05,101][root][INFO] - val:
+[2023-11-06 20:40:06,597][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_10_0.6854000091552734.pth
+[2023-11-06 20:40:06,597][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.68540
+[2023-11-06 20:40:06,630][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_10_0.pth
+[2023-11-06 20:40:06,631][root][INFO] - ===> epoch: 11/300
+[2023-11-06 20:40:06,631][root][INFO] - train:
+[2023-11-06 20:42:15,134][root][INFO] - val:
+[2023-11-06 20:42:16,581][root][INFO] - ===> epoch: 12/300
+[2023-11-06 20:42:16,582][root][INFO] - train:
+[2023-11-06 20:43:37,421][root][INFO] - val:
+[2023-11-06 20:43:38,928][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_12_0.7583000063896179.pth
+[2023-11-06 20:43:38,929][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.75830
+[2023-11-06 20:43:38,929][root][INFO] - ===> epoch: 13/300
+[2023-11-06 20:43:38,930][root][INFO] - train:
+[2023-11-06 20:44:40,847][root][INFO] - val:
+[2023-11-06 20:44:42,529][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_13_0.7628999948501587.pth
+[2023-11-06 20:44:42,530][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.76290
+[2023-11-06 20:44:42,530][root][INFO] - ===> epoch: 14/300
+[2023-11-06 20:44:42,531][root][INFO] - train:
+[2023-11-06 20:45:38,311][root][INFO] - val:
+[2023-11-06 20:45:39,814][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_14_0.7961999773979187.pth
+[2023-11-06 20:45:39,814][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.79620
+[2023-11-06 20:45:39,815][root][INFO] - ===> epoch: 15/300
+[2023-11-06 20:45:39,815][root][INFO] - train:
+[2023-11-06 20:46:31,737][root][INFO] - val:
+[2023-11-06 20:46:33,226][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_15_0.8087999820709229.pth
+[2023-11-06 20:46:33,227][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.80880
+[2023-11-06 20:46:33,228][root][INFO] - ===> epoch: 16/300
+[2023-11-06 20:46:33,228][root][INFO] - train:
+[2023-11-06 20:47:23,400][root][INFO] - val:
+[2023-11-06 20:47:25,040][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_16_0.8130000233650208.pth
+[2023-11-06 20:47:25,042][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.81300
+[2023-11-06 20:47:25,043][root][INFO] - ===> epoch: 17/300
+[2023-11-06 20:47:25,044][root][INFO] - train:
+[2023-11-06 20:48:16,574][root][INFO] - val:
+[2023-11-06 20:48:18,064][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_17_0.820900022983551.pth
+[2023-11-06 20:48:18,064][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.82090
+[2023-11-06 20:48:18,065][root][INFO] - ===> epoch: 18/300
+[2023-11-06 20:48:18,065][root][INFO] - train:
+[2023-11-06 20:49:06,110][root][INFO] - val:
+[2023-11-06 20:49:07,734][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_18_0.8238999843597412.pth
+[2023-11-06 20:49:07,735][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.82390
+[2023-11-06 20:49:07,735][root][INFO] - ===> epoch: 19/300
+[2023-11-06 20:49:07,736][root][INFO] - train:
+[2023-11-06 20:49:58,436][root][INFO] - val:
+[2023-11-06 20:49:59,944][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_19_0.8281000256538391.pth
+[2023-11-06 20:49:59,945][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.82810
+[2023-11-06 20:49:59,946][root][INFO] - ===> epoch: 20/300
+[2023-11-06 20:49:59,946][root][INFO] - train:
+[2023-11-06 20:50:50,987][root][INFO] - val:
+[2023-11-06 20:50:52,508][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_20_0.8349000215530396.pth
+[2023-11-06 20:50:52,509][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.83490
+[2023-11-06 20:50:52,546][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_20_0.pth
+[2023-11-06 20:50:52,547][root][INFO] - ===> epoch: 21/300
+[2023-11-06 20:50:52,548][root][INFO] - train:
+[2023-11-06 20:51:38,368][root][INFO] - val:
+[2023-11-06 20:51:39,826][root][INFO] - ===> epoch: 22/300
+[2023-11-06 20:51:39,826][root][INFO] - train:
+[2023-11-06 20:52:27,797][root][INFO] - val:
+[2023-11-06 20:52:29,280][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_22_0.8366000056266785.pth
+[2023-11-06 20:52:29,281][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.83660
+[2023-11-06 20:52:29,281][root][INFO] - ===> epoch: 23/300
+[2023-11-06 20:52:29,282][root][INFO] - train:
+[2023-11-06 20:53:17,250][root][INFO] - val:
+[2023-11-06 20:53:18,757][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_23_0.840499997138977.pth
+[2023-11-06 20:53:18,758][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.84050
+[2023-11-06 20:53:18,759][root][INFO] - ===> epoch: 24/300
+[2023-11-06 20:53:18,759][root][INFO] - train:
+[2023-11-06 20:54:11,264][root][INFO] - val:
+[2023-11-06 20:54:12,789][root][INFO] - ===> epoch: 25/300
+[2023-11-06 20:54:12,790][root][INFO] - train:
+[2023-11-06 20:55:03,517][root][INFO] - val:
+[2023-11-06 20:55:05,113][root][INFO] - ===> epoch: 26/300
+[2023-11-06 20:55:05,114][root][INFO] - train:
+[2023-11-06 20:55:58,048][root][INFO] - val:
+[2023-11-06 20:55:59,589][root][INFO] - ===> epoch: 27/300
+[2023-11-06 20:55:59,590][root][INFO] - train:
+[2023-11-06 20:56:50,255][root][INFO] - val:
+[2023-11-06 20:56:51,765][root][INFO] - ===> epoch: 28/300
+[2023-11-06 20:56:51,765][root][INFO] - train:
+[2023-11-06 20:57:43,552][root][INFO] - val:
+[2023-11-06 20:57:45,042][root][INFO] - ===> epoch: 29/300
+[2023-11-06 20:57:45,042][root][INFO] - train:
+[2023-11-06 20:58:35,847][root][INFO] - val:
+[2023-11-06 20:58:37,452][root][INFO] - ===> epoch: 30/300
+[2023-11-06 20:58:37,453][root][INFO] - train:
+[2023-11-06 20:59:28,707][root][INFO] - val:
+[2023-11-06 20:59:30,210][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_30_0.8431000113487244.pth
+[2023-11-06 20:59:30,210][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.84310
+[2023-11-06 20:59:30,248][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_30_0.pth
+[2023-11-06 20:59:30,249][root][INFO] - ===> epoch: 31/300
+[2023-11-06 20:59:30,249][root][INFO] - train:
+[2023-11-06 21:00:21,587][root][INFO] - val:
+[2023-11-06 21:00:23,045][root][INFO] - ===> epoch: 32/300
+[2023-11-06 21:00:23,046][root][INFO] - train:
+[2023-11-06 21:01:11,700][root][INFO] - val:
+[2023-11-06 21:01:13,163][root][INFO] - ===> epoch: 33/300
+[2023-11-06 21:01:13,163][root][INFO] - train:
+[2023-11-06 21:02:02,307][root][INFO] - val:
+[2023-11-06 21:02:03,817][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_33_0.8535000085830688.pth
+[2023-11-06 21:02:03,818][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.85350
+[2023-11-06 21:02:03,818][root][INFO] - ===> epoch: 34/300
+[2023-11-06 21:02:03,819][root][INFO] - train:
+[2023-11-06 21:02:53,193][root][INFO] - val:
+[2023-11-06 21:02:54,722][root][INFO] - ===> epoch: 35/300
+[2023-11-06 21:02:54,722][root][INFO] - train:
+[2023-11-06 21:03:43,501][root][INFO] - val:
+[2023-11-06 21:03:44,950][root][INFO] - ===> epoch: 36/300
+[2023-11-06 21:03:44,950][root][INFO] - train:
+[2023-11-06 21:04:35,286][root][INFO] - val:
+[2023-11-06 21:04:36,966][root][INFO] - ===> epoch: 37/300
+[2023-11-06 21:04:36,966][root][INFO] - train:
+[2023-11-06 21:05:24,827][root][INFO] - val:
+[2023-11-06 21:05:26,335][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_37_0.8540999889373779.pth
+[2023-11-06 21:05:26,336][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.85410
+[2023-11-06 21:05:26,337][root][INFO] - ===> epoch: 38/300
+[2023-11-06 21:05:26,337][root][INFO] - train:
+[2023-11-06 21:06:13,918][root][INFO] - val:
+[2023-11-06 21:06:15,478][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_38_0.8557000160217285.pth
+[2023-11-06 21:06:15,479][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.85570
+[2023-11-06 21:06:15,479][root][INFO] - ===> epoch: 39/300
+[2023-11-06 21:06:15,480][root][INFO] - train:
+[2023-11-06 21:07:03,670][root][INFO] - val:
+[2023-11-06 21:07:05,149][root][INFO] - ===> epoch: 40/300
+[2023-11-06 21:07:05,150][root][INFO] - train:
+[2023-11-06 21:07:52,381][root][INFO] - val:
+[2023-11-06 21:07:53,895][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_40_0.861299991607666.pth
+[2023-11-06 21:07:53,896][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.86130
+[2023-11-06 21:07:53,939][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_40_0.pth
+[2023-11-06 21:07:53,940][root][INFO] - ===> epoch: 41/300
+[2023-11-06 21:07:53,941][root][INFO] - train:
+[2023-11-06 21:08:40,813][root][INFO] - val:
+[2023-11-06 21:08:42,418][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_41_0.863099992275238.pth
+[2023-11-06 21:08:42,418][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.86310
+[2023-11-06 21:08:42,419][root][INFO] - ===> epoch: 42/300
+[2023-11-06 21:08:42,419][root][INFO] - train:
+[2023-11-06 21:09:30,989][root][INFO] - val:
+[2023-11-06 21:09:32,575][root][INFO] - ===> epoch: 43/300
+[2023-11-06 21:09:32,575][root][INFO] - train:
+[2023-11-06 21:10:20,043][root][INFO] - val:
+[2023-11-06 21:10:21,489][root][INFO] - ===> epoch: 44/300
+[2023-11-06 21:10:21,490][root][INFO] - train:
+[2023-11-06 21:11:10,330][root][INFO] - val:
+[2023-11-06 21:11:11,880][root][INFO] - ===> epoch: 45/300
+[2023-11-06 21:11:11,881][root][INFO] - train:
+[2023-11-06 21:12:02,472][root][INFO] - val:
+[2023-11-06 21:12:04,017][root][INFO] - ===> epoch: 46/300
+[2023-11-06 21:12:04,018][root][INFO] - train:
+[2023-11-06 21:12:52,737][root][INFO] - val:
+[2023-11-06 21:12:54,384][root][INFO] - ===> epoch: 47/300
+[2023-11-06 21:12:54,385][root][INFO] - train:
+[2023-11-06 21:13:40,560][root][INFO] - val:
+[2023-11-06 21:13:42,023][root][INFO] - ===> epoch: 48/300
+[2023-11-06 21:13:42,024][root][INFO] - train:
+[2023-11-06 21:14:30,363][root][INFO] - val:
+[2023-11-06 21:14:31,814][root][INFO] - ===> epoch: 49/300
+[2023-11-06 21:14:31,814][root][INFO] - train:
+[2023-11-06 21:15:18,746][root][INFO] - val:
+[2023-11-06 21:15:20,203][root][INFO] - ===> epoch: 50/300
+[2023-11-06 21:15:20,204][root][INFO] - train:
+[2023-11-06 21:16:10,010][root][INFO] - val:
+[2023-11-06 21:16:11,580][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_50_0.pth
+[2023-11-06 21:16:11,582][root][INFO] - ===> epoch: 51/300
+[2023-11-06 21:16:11,582][root][INFO] - train:
+[2023-11-06 21:17:00,038][root][INFO] - val:
+[2023-11-06 21:17:01,640][root][INFO] - ===> epoch: 52/300
+[2023-11-06 21:17:01,640][root][INFO] - train:
+[2023-11-06 21:17:51,894][root][INFO] - val:
+[2023-11-06 21:17:53,496][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_52_0.8665000200271606.pth
+[2023-11-06 21:17:53,497][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.86650
+[2023-11-06 21:17:53,497][root][INFO] - ===> epoch: 53/300
+[2023-11-06 21:17:53,498][root][INFO] - train:
+[2023-11-06 21:18:44,653][root][INFO] - val:
+[2023-11-06 21:18:46,165][root][INFO] - ===> epoch: 54/300
+[2023-11-06 21:18:46,165][root][INFO] - train:
+[2023-11-06 21:19:36,508][root][INFO] - val:
+[2023-11-06 21:19:38,015][root][INFO] - ===> epoch: 55/300
+[2023-11-06 21:19:38,016][root][INFO] - train:
+[2023-11-06 21:20:27,826][root][INFO] - val:
+[2023-11-06 21:20:29,301][root][INFO] - ===> epoch: 56/300
+[2023-11-06 21:20:29,301][root][INFO] - train:
+[2023-11-06 21:21:19,204][root][INFO] - val:
+[2023-11-06 21:21:20,710][root][INFO] - ===> epoch: 57/300
+[2023-11-06 21:21:20,710][root][INFO] - train:
+[2023-11-06 21:22:10,547][root][INFO] - val:
+[2023-11-06 21:22:12,080][root][INFO] - ===> epoch: 58/300
+[2023-11-06 21:22:12,081][root][INFO] - train:
+[2023-11-06 21:23:00,640][root][INFO] - val:
+[2023-11-06 21:23:02,272][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_58_0.8707000017166138.pth
+[2023-11-06 21:23:02,273][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.87070
+[2023-11-06 21:23:02,274][root][INFO] - ===> epoch: 59/300
+[2023-11-06 21:23:02,274][root][INFO] - train:
+[2023-11-06 21:23:51,108][root][INFO] - val:
+[2023-11-06 21:23:52,612][root][INFO] - ===> epoch: 60/300
+[2023-11-06 21:23:52,612][root][INFO] - train:
+[2023-11-06 21:24:41,587][root][INFO] - val:
+[2023-11-06 21:24:43,095][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_60_0.pth
+[2023-11-06 21:24:43,096][root][INFO] - ===> epoch: 61/300
+[2023-11-06 21:24:43,097][root][INFO] - train:
+[2023-11-06 21:25:31,164][root][INFO] - val:
+[2023-11-06 21:25:32,681][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_61_0.8729000091552734.pth
+[2023-11-06 21:25:32,682][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.87290
+[2023-11-06 21:25:32,683][root][INFO] - ===> epoch: 62/300
+[2023-11-06 21:25:32,683][root][INFO] - train:
+[2023-11-06 21:26:20,792][root][INFO] - val:
+[2023-11-06 21:26:22,240][root][INFO] - ===> epoch: 63/300
+[2023-11-06 21:26:22,241][root][INFO] - train:
+[2023-11-06 21:27:09,838][root][INFO] - val:
+[2023-11-06 21:27:11,299][root][INFO] - ===> epoch: 64/300
+[2023-11-06 21:27:11,299][root][INFO] - train:
+[2023-11-06 21:28:01,765][root][INFO] - val:
+[2023-11-06 21:28:03,278][root][INFO] - ===> epoch: 65/300
+[2023-11-06 21:28:03,278][root][INFO] - train:
+[2023-11-06 21:28:50,155][root][INFO] - val:
+[2023-11-06 21:28:51,623][root][INFO] - ===> epoch: 66/300
+[2023-11-06 21:28:51,624][root][INFO] - train:
+[2023-11-06 21:29:40,723][root][INFO] - val:
+[2023-11-06 21:29:42,330][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_66_0.8733999729156494.pth
+[2023-11-06 21:29:42,331][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.87340
+[2023-11-06 21:29:42,332][root][INFO] - ===> epoch: 67/300
+[2023-11-06 21:29:42,332][root][INFO] - train:
+[2023-11-06 21:30:30,008][root][INFO] - val:
+[2023-11-06 21:30:31,473][root][INFO] - ===> epoch: 68/300
+[2023-11-06 21:30:31,473][root][INFO] - train:
+[2023-11-06 21:31:21,740][root][INFO] - val:
+[2023-11-06 21:31:23,211][root][INFO] - ===> epoch: 69/300
+[2023-11-06 21:31:23,211][root][INFO] - train:
+[2023-11-06 21:32:10,616][root][INFO] - val:
+[2023-11-06 21:32:12,104][root][INFO] - ===> epoch: 70/300
+[2023-11-06 21:32:12,104][root][INFO] - train:
+[2023-11-06 21:32:59,312][root][INFO] - val:
+[2023-11-06 21:33:00,832][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_70_0.pth
+[2023-11-06 21:33:00,833][root][INFO] - ===> epoch: 71/300
+[2023-11-06 21:33:00,834][root][INFO] - train:
+[2023-11-06 21:33:48,238][root][INFO] - val:
+[2023-11-06 21:33:49,716][root][INFO] - ===> epoch: 72/300
+[2023-11-06 21:33:49,716][root][INFO] - train:
+[2023-11-06 21:34:36,951][root][INFO] - val:
+[2023-11-06 21:34:38,414][root][INFO] - ===> epoch: 73/300
+[2023-11-06 21:34:38,415][root][INFO] - train:
+[2023-11-06 21:35:25,885][root][INFO] - val:
+[2023-11-06 21:35:27,390][root][INFO] - ===> epoch: 74/300
+[2023-11-06 21:35:27,390][root][INFO] - train:
+[2023-11-06 21:36:15,190][root][INFO] - val:
+[2023-11-06 21:36:16,708][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_74_0.8758999705314636.pth
+[2023-11-06 21:36:16,708][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.87590
+[2023-11-06 21:36:16,709][root][INFO] - ===> epoch: 75/300
+[2023-11-06 21:36:16,710][root][INFO] - train:
+[2023-11-06 21:37:04,111][root][INFO] - val:
+[2023-11-06 21:37:05,565][root][INFO] - ===> epoch: 76/300
+[2023-11-06 21:37:05,565][root][INFO] - train:
+[2023-11-06 21:37:52,348][root][INFO] - val:
+[2023-11-06 21:37:53,804][root][INFO] - ===> epoch: 77/300
+[2023-11-06 21:37:53,804][root][INFO] - train:
+[2023-11-06 21:38:40,505][root][INFO] - val:
+[2023-11-06 21:38:41,963][root][INFO] - ===> epoch: 78/300
+[2023-11-06 21:38:41,964][root][INFO] - train:
+[2023-11-06 21:39:29,050][root][INFO] - val:
+[2023-11-06 21:39:30,522][root][INFO] - ===> epoch: 79/300
+[2023-11-06 21:39:30,523][root][INFO] - train:
+[2023-11-06 21:40:17,482][root][INFO] - val:
+[2023-11-06 21:40:18,953][root][INFO] - ===> epoch: 80/300
+[2023-11-06 21:40:18,953][root][INFO] - train:
+[2023-11-06 21:41:05,673][root][INFO] - val:
+[2023-11-06 21:41:07,341][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_80_0.pth
+[2023-11-06 21:41:07,342][root][INFO] - ===> epoch: 81/300
+[2023-11-06 21:41:07,342][root][INFO] - train:
+[2023-11-06 21:41:55,230][root][INFO] - val:
+[2023-11-06 21:41:56,771][root][INFO] - ===> epoch: 82/300
+[2023-11-06 21:41:56,771][root][INFO] - train:
+[2023-11-06 21:42:44,804][root][INFO] - val:
+[2023-11-06 21:42:46,315][root][INFO] - ===> epoch: 83/300
+[2023-11-06 21:42:46,316][root][INFO] - train:
+[2023-11-06 21:43:32,745][root][INFO] - val:
+[2023-11-06 21:43:34,198][root][INFO] - ===> epoch: 84/300
+[2023-11-06 21:43:34,198][root][INFO] - train:
+[2023-11-06 21:44:21,525][root][INFO] - val:
+[2023-11-06 21:44:23,000][root][INFO] - ===> epoch: 85/300
+[2023-11-06 21:44:23,000][root][INFO] - train:
+[2023-11-06 21:45:11,816][root][INFO] - val:
+[2023-11-06 21:45:13,451][root][INFO] - ===> epoch: 86/300
+[2023-11-06 21:45:13,451][root][INFO] - train:
+[2023-11-06 21:46:01,687][root][INFO] - val:
+[2023-11-06 21:46:03,282][root][INFO] - ===> epoch: 87/300
+[2023-11-06 21:46:03,283][root][INFO] - train:
+[2023-11-06 21:46:51,969][root][INFO] - val:
+[2023-11-06 21:46:53,441][root][INFO] - ===> epoch: 88/300
+[2023-11-06 21:46:53,441][root][INFO] - train:
+[2023-11-06 21:47:42,205][root][INFO] - val:
+[2023-11-06 21:47:43,724][root][INFO] - ===> epoch: 89/300
+[2023-11-06 21:47:43,724][root][INFO] - train:
+[2023-11-06 21:48:31,270][root][INFO] - val:
+[2023-11-06 21:48:32,829][root][INFO] - ===> epoch: 90/300
+[2023-11-06 21:48:32,830][root][INFO] - train:
+[2023-11-06 21:49:20,695][root][INFO] - val:
+[2023-11-06 21:49:22,203][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_90_0.pth
+[2023-11-06 21:49:22,204][root][INFO] - ===> epoch: 91/300
+[2023-11-06 21:49:22,204][root][INFO] - train:
+[2023-11-06 21:50:09,947][root][INFO] - val:
+[2023-11-06 21:50:11,433][root][INFO] - ===> epoch: 92/300
+[2023-11-06 21:50:11,434][root][INFO] - train:
+[2023-11-06 21:50:58,928][root][INFO] - val:
+[2023-11-06 21:51:00,454][root][INFO] - ===> epoch: 93/300
+[2023-11-06 21:51:00,455][root][INFO] - train:
+[2023-11-06 21:51:47,515][root][INFO] - val:
+[2023-11-06 21:51:48,977][root][INFO] - ===> epoch: 94/300
+[2023-11-06 21:51:48,977][root][INFO] - train:
+[2023-11-06 21:52:36,084][root][INFO] - val:
+[2023-11-06 21:52:37,659][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_94_0.8792999982833862.pth
+[2023-11-06 21:52:37,660][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.87930
+[2023-11-06 21:52:37,660][root][INFO] - ===> epoch: 95/300
+[2023-11-06 21:52:37,661][root][INFO] - train:
+[2023-11-06 21:53:26,633][root][INFO] - val:
+[2023-11-06 21:53:28,105][root][INFO] - ===> epoch: 96/300
+[2023-11-06 21:53:28,106][root][INFO] - train:
+[2023-11-06 21:54:15,696][root][INFO] - val:
+[2023-11-06 21:54:17,180][root][INFO] - ===> epoch: 97/300
+[2023-11-06 21:54:17,181][root][INFO] - train:
+[2023-11-06 21:55:05,547][root][INFO] - val:
+[2023-11-06 21:55:07,094][root][INFO] - ===> epoch: 98/300
+[2023-11-06 21:55:07,094][root][INFO] - train:
+[2023-11-06 21:55:54,748][root][INFO] - val:
+[2023-11-06 21:55:56,396][root][INFO] - ===> epoch: 99/300
+[2023-11-06 21:55:56,396][root][INFO] - train:
+[2023-11-06 21:56:44,438][root][INFO] - val:
+[2023-11-06 21:56:45,895][root][INFO] - ===> epoch: 100/300
+[2023-11-06 21:56:45,895][root][INFO] - train:
+[2023-11-06 21:57:32,143][root][INFO] - val:
+[2023-11-06 21:57:33,668][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_100_0.pth
+[2023-11-06 21:57:33,669][root][INFO] - ===> epoch: 101/300
+[2023-11-06 21:57:33,669][root][INFO] - train:
+[2023-11-06 21:58:21,498][root][INFO] - val:
+[2023-11-06 21:58:23,104][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_101_0.8826000094413757.pth
+[2023-11-06 21:58:23,105][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88260
+[2023-11-06 21:58:23,106][root][INFO] - ===> epoch: 102/300
+[2023-11-06 21:58:23,106][root][INFO] - train:
+[2023-11-06 21:59:10,267][root][INFO] - val:
+[2023-11-06 21:59:11,722][root][INFO] - ===> epoch: 103/300
+[2023-11-06 21:59:11,722][root][INFO] - train:
+[2023-11-06 22:00:00,033][root][INFO] - val:
+[2023-11-06 22:00:01,548][root][INFO] - ===> epoch: 104/300
+[2023-11-06 22:00:01,549][root][INFO] - train:
+[2023-11-06 22:00:50,276][root][INFO] - val:
+[2023-11-06 22:00:51,805][root][INFO] - ===> epoch: 105/300
+[2023-11-06 22:00:51,806][root][INFO] - train:
+[2023-11-06 22:01:41,031][root][INFO] - val:
+[2023-11-06 22:01:42,554][root][INFO] - ===> epoch: 106/300
+[2023-11-06 22:01:42,555][root][INFO] - train:
+[2023-11-06 22:02:30,397][root][INFO] - val:
+[2023-11-06 22:02:31,888][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_106_0.8831999897956848.pth
+[2023-11-06 22:02:31,888][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88320
+[2023-11-06 22:02:31,889][root][INFO] - ===> epoch: 107/300
+[2023-11-06 22:02:31,889][root][INFO] - train:
+[2023-11-06 22:03:20,394][root][INFO] - val:
+[2023-11-06 22:03:21,970][root][INFO] - ===> epoch: 108/300
+[2023-11-06 22:03:21,971][root][INFO] - train:
+[2023-11-06 22:04:09,529][root][INFO] - val:
+[2023-11-06 22:04:11,012][root][INFO] - ===> epoch: 109/300
+[2023-11-06 22:04:11,013][root][INFO] - train:
+[2023-11-06 22:04:59,879][root][INFO] - val:
+[2023-11-06 22:05:01,353][root][INFO] - ===> epoch: 110/300
+[2023-11-06 22:05:01,354][root][INFO] - train:
+[2023-11-06 22:05:48,373][root][INFO] - val:
+[2023-11-06 22:05:50,055][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_110_0.pth
+[2023-11-06 22:05:50,056][root][INFO] - ===> epoch: 111/300
+[2023-11-06 22:05:50,056][root][INFO] - train:
+[2023-11-06 22:06:38,135][root][INFO] - val:
+[2023-11-06 22:06:39,799][root][INFO] - ===> epoch: 112/300
+[2023-11-06 22:06:39,800][root][INFO] - train:
+[2023-11-06 22:07:27,715][root][INFO] - val:
+[2023-11-06 22:07:29,256][root][INFO] - ===> epoch: 113/300
+[2023-11-06 22:07:29,257][root][INFO] - train:
+[2023-11-06 22:08:18,456][root][INFO] - val:
+[2023-11-06 22:08:19,902][root][INFO] - ===> epoch: 114/300
+[2023-11-06 22:08:19,902][root][INFO] - train:
+[2023-11-06 22:09:05,888][root][INFO] - val:
+[2023-11-06 22:09:07,357][root][INFO] - ===> epoch: 115/300
+[2023-11-06 22:09:07,357][root][INFO] - train:
+[2023-11-06 22:09:52,707][root][INFO] - val:
+[2023-11-06 22:09:54,185][root][INFO] - ===> epoch: 116/300
+[2023-11-06 22:09:54,186][root][INFO] - train:
+[2023-11-06 22:10:39,290][root][INFO] - val:
+[2023-11-06 22:10:40,860][root][INFO] - ===> epoch: 117/300
+[2023-11-06 22:10:40,861][root][INFO] - train:
+[2023-11-06 22:11:25,972][root][INFO] - val:
+[2023-11-06 22:11:27,513][root][INFO] - ===> epoch: 118/300
+[2023-11-06 22:11:27,514][root][INFO] - train:
+[2023-11-06 22:12:12,573][root][INFO] - val:
+[2023-11-06 22:12:14,180][root][INFO] - ===> epoch: 119/300
+[2023-11-06 22:12:14,180][root][INFO] - train:
+[2023-11-06 22:12:59,435][root][INFO] - val:
+[2023-11-06 22:13:01,012][root][INFO] - ===> epoch: 120/300
+[2023-11-06 22:13:01,012][root][INFO] - train:
+[2023-11-06 22:13:45,626][root][INFO] - val:
+[2023-11-06 22:13:47,201][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_120_0.pth
+[2023-11-06 22:13:47,202][root][INFO] - ===> epoch: 121/300
+[2023-11-06 22:13:47,202][root][INFO] - train:
+[2023-11-06 22:14:32,098][root][INFO] - val:
+[2023-11-06 22:14:33,637][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_121_0.8848999738693237.pth
+[2023-11-06 22:14:33,637][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88490
+[2023-11-06 22:14:33,638][root][INFO] - ===> epoch: 122/300
+[2023-11-06 22:14:33,638][root][INFO] - train:
+[2023-11-06 22:15:18,606][root][INFO] - val:
+[2023-11-06 22:15:20,159][root][INFO] - ===> epoch: 123/300
+[2023-11-06 22:15:20,159][root][INFO] - train:
+[2023-11-06 22:16:05,133][root][INFO] - val:
+[2023-11-06 22:16:06,565][root][INFO] - ===> epoch: 124/300
+[2023-11-06 22:16:06,566][root][INFO] - train:
+[2023-11-06 22:16:51,452][root][INFO] - val:
+[2023-11-06 22:16:53,126][root][INFO] - ===> epoch: 125/300
+[2023-11-06 22:16:53,127][root][INFO] - train:
+[2023-11-06 22:17:37,826][root][INFO] - val:
+[2023-11-06 22:17:39,436][root][INFO] - ===> epoch: 126/300
+[2023-11-06 22:17:39,436][root][INFO] - train:
+[2023-11-06 22:18:24,407][root][INFO] - val:
+[2023-11-06 22:18:25,999][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_126_0.8855000138282776.pth
+[2023-11-06 22:18:26,000][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88550
+[2023-11-06 22:18:26,000][root][INFO] - ===> epoch: 127/300
+[2023-11-06 22:18:26,001][root][INFO] - train:
+[2023-11-06 22:19:11,003][root][INFO] - val:
+[2023-11-06 22:19:12,618][root][INFO] - ===> epoch: 128/300
+[2023-11-06 22:19:12,618][root][INFO] - train:
+[2023-11-06 22:19:57,598][root][INFO] - val:
+[2023-11-06 22:19:59,156][root][INFO] - ===> epoch: 129/300
+[2023-11-06 22:19:59,157][root][INFO] - train:
+[2023-11-06 22:20:43,789][root][INFO] - val:
+[2023-11-06 22:20:45,632][root][INFO] - ===> epoch: 130/300
+[2023-11-06 22:20:45,632][root][INFO] - train:
+[2023-11-06 22:21:30,281][root][INFO] - val:
+[2023-11-06 22:21:31,953][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_130_0.pth
+[2023-11-06 22:21:31,953][root][INFO] - ===> epoch: 131/300
+[2023-11-06 22:21:31,954][root][INFO] - train:
+[2023-11-06 22:22:17,068][root][INFO] - val:
+[2023-11-06 22:22:18,721][root][INFO] - ===> epoch: 132/300
+[2023-11-06 22:22:18,722][root][INFO] - train:
+[2023-11-06 22:23:03,596][root][INFO] - val:
+[2023-11-06 22:23:05,233][root][INFO] - ===> epoch: 133/300
+[2023-11-06 22:23:05,233][root][INFO] - train:
+[2023-11-06 22:23:50,249][root][INFO] - val:
+[2023-11-06 22:23:51,884][root][INFO] - ===> epoch: 134/300
+[2023-11-06 22:23:51,885][root][INFO] - train:
+[2023-11-06 22:24:36,437][root][INFO] - val:
+[2023-11-06 22:24:38,423][root][INFO] - ===> epoch: 135/300
+[2023-11-06 22:24:38,423][root][INFO] - train:
+[2023-11-06 22:25:22,993][root][INFO] - val:
+[2023-11-06 22:25:24,544][root][INFO] - ===> epoch: 136/300
+[2023-11-06 22:25:24,544][root][INFO] - train:
+[2023-11-06 22:26:09,322][root][INFO] - val:
+[2023-11-06 22:26:10,835][root][INFO] - ===> epoch: 137/300
+[2023-11-06 22:26:10,836][root][INFO] - train:
+[2023-11-06 22:26:55,881][root][INFO] - val:
+[2023-11-06 22:26:57,520][root][INFO] - ===> epoch: 138/300
+[2023-11-06 22:26:57,520][root][INFO] - train:
+[2023-11-06 22:27:42,509][root][INFO] - val:
+[2023-11-06 22:27:44,046][root][INFO] - ===> epoch: 139/300
+[2023-11-06 22:27:44,046][root][INFO] - train:
+[2023-11-06 22:28:28,588][root][INFO] - val:
+[2023-11-06 22:28:30,181][root][INFO] - ===> epoch: 140/300
+[2023-11-06 22:28:30,181][root][INFO] - train:
+[2023-11-06 22:29:15,066][root][INFO] - val:
+[2023-11-06 22:29:16,713][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_140_0.pth
+[2023-11-06 22:29:16,714][root][INFO] - ===> epoch: 141/300
+[2023-11-06 22:29:16,715][root][INFO] - train:
+[2023-11-06 22:30:01,779][root][INFO] - val:
+[2023-11-06 22:30:03,347][root][INFO] - ===> epoch: 142/300
+[2023-11-06 22:30:03,347][root][INFO] - train:
+[2023-11-06 22:30:48,340][root][INFO] - val:
+[2023-11-06 22:30:49,983][root][INFO] - ===> epoch: 143/300
+[2023-11-06 22:30:49,983][root][INFO] - train:
+[2023-11-06 22:31:34,998][root][INFO] - val:
+[2023-11-06 22:31:36,656][root][INFO] - ===> epoch: 144/300
+[2023-11-06 22:31:36,656][root][INFO] - train:
+[2023-11-06 22:32:21,187][root][INFO] - val:
+[2023-11-06 22:32:23,116][root][INFO] - ===> epoch: 145/300
+[2023-11-06 22:32:23,116][root][INFO] - train:
+[2023-11-06 22:33:07,623][root][INFO] - val:
+[2023-11-06 22:33:09,303][root][INFO] - ===> epoch: 146/300
+[2023-11-06 22:33:09,303][root][INFO] - train:
+[2023-11-06 22:33:54,049][root][INFO] - val:
+[2023-11-06 22:33:55,636][root][INFO] - ===> epoch: 147/300
+[2023-11-06 22:33:55,636][root][INFO] - train:
+[2023-11-06 22:34:40,574][root][INFO] - val:
+[2023-11-06 22:34:42,121][root][INFO] - ===> epoch: 148/300
+[2023-11-06 22:34:42,121][root][INFO] - train:
+[2023-11-06 22:35:27,069][root][INFO] - val:
+[2023-11-06 22:35:28,615][root][INFO] - ===> epoch: 149/300
+[2023-11-06 22:35:28,615][root][INFO] - train:
+[2023-11-06 22:36:13,086][root][INFO] - val:
+[2023-11-06 22:36:14,750][root][INFO] - ===> epoch: 150/300
+[2023-11-06 22:36:14,750][root][INFO] - train:
+[2023-11-06 22:36:59,485][root][INFO] - val:
+[2023-11-06 22:37:01,122][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_150_0.pth
+[2023-11-06 22:37:01,123][root][INFO] - ===> epoch: 151/300
+[2023-11-06 22:37:01,123][root][INFO] - train:
+[2023-11-06 22:37:46,152][root][INFO] - val:
+[2023-11-06 22:37:47,743][root][INFO] - ===> epoch: 152/300
+[2023-11-06 22:37:47,743][root][INFO] - train:
+[2023-11-06 22:38:32,660][root][INFO] - val:
+[2023-11-06 22:38:34,225][root][INFO] - ===> epoch: 153/300
+[2023-11-06 22:38:34,225][root][INFO] - train:
+[2023-11-06 22:39:18,851][root][INFO] - val:
+[2023-11-06 22:39:20,695][root][INFO] - ===> epoch: 154/300
+[2023-11-06 22:39:20,695][root][INFO] - train:
+[2023-11-06 22:40:05,094][root][INFO] - val:
+[2023-11-06 22:40:06,724][root][INFO] - ===> epoch: 155/300
+[2023-11-06 22:40:06,725][root][INFO] - train:
+[2023-11-06 22:40:51,577][root][INFO] - val:
+[2023-11-06 22:40:53,210][root][INFO] - ===> epoch: 156/300
+[2023-11-06 22:40:53,211][root][INFO] - train:
+[2023-11-06 22:41:38,065][root][INFO] - val:
+[2023-11-06 22:41:39,685][root][INFO] - ===> epoch: 157/300
+[2023-11-06 22:41:39,685][root][INFO] - train:
+[2023-11-06 22:42:24,609][root][INFO] - val:
+[2023-11-06 22:42:26,203][root][INFO] - ===> epoch: 158/300
+[2023-11-06 22:42:26,203][root][INFO] - train:
+[2023-11-06 22:43:11,215][root][INFO] - val:
+[2023-11-06 22:43:12,844][root][INFO] - ===> epoch: 159/300
+[2023-11-06 22:43:12,844][root][INFO] - train:
+[2023-11-06 22:43:57,434][root][INFO] - val:
+[2023-11-06 22:43:59,119][root][INFO] - ===> epoch: 160/300
+[2023-11-06 22:43:59,120][root][INFO] - train:
+[2023-11-06 22:44:43,538][root][INFO] - val:
+[2023-11-06 22:44:45,204][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_160_0.pth
+[2023-11-06 22:44:45,205][root][INFO] - ===> epoch: 161/300
+[2023-11-06 22:44:45,205][root][INFO] - train:
+[2023-11-06 22:45:30,197][root][INFO] - val:
+[2023-11-06 22:45:31,805][root][INFO] - ===> epoch: 162/300
+[2023-11-06 22:45:31,805][root][INFO] - train:
+[2023-11-06 22:46:16,723][root][INFO] - val:
+[2023-11-06 22:46:18,324][root][INFO] - ===> epoch: 163/300
+[2023-11-06 22:46:18,325][root][INFO] - train:
+[2023-11-06 22:47:03,187][root][INFO] - val:
+[2023-11-06 22:47:04,628][root][INFO] - ===> epoch: 164/300
+[2023-11-06 22:47:04,629][root][INFO] - train:
+[2023-11-06 22:47:49,179][root][INFO] - val:
+[2023-11-06 22:47:50,894][root][INFO] - ===> epoch: 165/300
+[2023-11-06 22:47:50,894][root][INFO] - train:
+[2023-11-06 22:48:35,369][root][INFO] - val:
+[2023-11-06 22:48:36,941][root][INFO] - ===> epoch: 166/300
+[2023-11-06 22:48:36,942][root][INFO] - train:
+[2023-11-06 22:49:22,103][root][INFO] - val:
+[2023-11-06 22:49:23,755][root][INFO] - ===> epoch: 167/300
+[2023-11-06 22:49:23,755][root][INFO] - train:
+[2023-11-06 22:50:08,555][root][INFO] - val:
+[2023-11-06 22:50:10,093][root][INFO] - ===> epoch: 168/300
+[2023-11-06 22:50:10,094][root][INFO] - train:
+[2023-11-06 22:50:54,872][root][INFO] - val:
+[2023-11-06 22:50:56,460][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_168_0.8860999941825867.pth
+[2023-11-06 22:50:56,460][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88610
+[2023-11-06 22:50:56,461][root][INFO] - ===> epoch: 169/300
+[2023-11-06 22:50:56,461][root][INFO] - train:
+[2023-11-06 22:51:41,330][root][INFO] - val:
+[2023-11-06 22:51:42,908][root][INFO] - ===> epoch: 170/300
+[2023-11-06 22:51:42,908][root][INFO] - train:
+[2023-11-06 22:52:27,335][root][INFO] - val:
+[2023-11-06 22:52:28,950][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_170_0.pth
+[2023-11-06 22:52:28,951][root][INFO] - ===> epoch: 171/300
+[2023-11-06 22:52:28,952][root][INFO] - train:
+[2023-11-06 22:53:13,770][root][INFO] - val:
+[2023-11-06 22:53:15,398][root][INFO] - ===> epoch: 172/300
+[2023-11-06 22:53:15,399][root][INFO] - train:
+[2023-11-06 22:54:00,408][root][INFO] - val:
+[2023-11-06 22:54:01,954][root][INFO] - ===> epoch: 173/300
+[2023-11-06 22:54:01,954][root][INFO] - train:
+[2023-11-06 22:54:46,947][root][INFO] - val:
+[2023-11-06 22:54:48,547][root][INFO] - ===> epoch: 174/300
+[2023-11-06 22:54:48,548][root][INFO] - train:
+[2023-11-06 22:55:33,192][root][INFO] - val:
+[2023-11-06 22:55:34,853][root][INFO] - ===> epoch: 175/300
+[2023-11-06 22:55:34,853][root][INFO] - train:
+[2023-11-06 22:56:19,598][root][INFO] - val:
+[2023-11-06 22:56:21,185][root][INFO] - ===> epoch: 176/300
+[2023-11-06 22:56:21,186][root][INFO] - train:
+[2023-11-06 22:57:06,141][root][INFO] - val:
+[2023-11-06 22:57:07,686][root][INFO] - ===> epoch: 177/300
+[2023-11-06 22:57:07,686][root][INFO] - train:
+[2023-11-06 22:57:52,557][root][INFO] - val:
+[2023-11-06 22:57:54,177][root][INFO] - ===> epoch: 178/300
+[2023-11-06 22:57:54,177][root][INFO] - train:
+[2023-11-06 22:58:39,223][root][INFO] - val:
+[2023-11-06 22:58:40,837][root][INFO] - ===> epoch: 179/300
+[2023-11-06 22:58:40,837][root][INFO] - train:
+[2023-11-06 22:59:25,552][root][INFO] - val:
+[2023-11-06 22:59:27,170][root][INFO] - ===> epoch: 180/300
+[2023-11-06 22:59:27,170][root][INFO] - train:
+[2023-11-06 23:00:12,125][root][INFO] - val:
+[2023-11-06 23:00:13,699][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_180_0.pth
+[2023-11-06 23:00:13,700][root][INFO] - ===> epoch: 181/300
+[2023-11-06 23:00:13,700][root][INFO] - train:
+[2023-11-06 23:00:58,490][root][INFO] - val:
+[2023-11-06 23:01:00,157][root][INFO] - ===> epoch: 182/300
+[2023-11-06 23:01:00,157][root][INFO] - train:
+[2023-11-06 23:01:45,054][root][INFO] - val:
+[2023-11-06 23:01:46,651][root][INFO] - ===> epoch: 183/300
+[2023-11-06 23:01:46,652][root][INFO] - train:
+[2023-11-06 23:02:31,578][root][INFO] - val:
+[2023-11-06 23:02:33,145][root][INFO] - ===> epoch: 184/300
+[2023-11-06 23:02:33,146][root][INFO] - train:
+[2023-11-06 23:03:17,692][root][INFO] - val:
+[2023-11-06 23:03:19,294][root][INFO] - ===> epoch: 185/300
+[2023-11-06 23:03:19,294][root][INFO] - train:
+[2023-11-06 23:04:04,092][root][INFO] - val:
+[2023-11-06 23:04:05,621][root][INFO] - ===> epoch: 186/300
+[2023-11-06 23:04:05,621][root][INFO] - train:
+[2023-11-06 23:04:50,404][root][INFO] - val:
+[2023-11-06 23:04:51,931][root][INFO] - ===> epoch: 187/300
+[2023-11-06 23:04:51,932][root][INFO] - train:
+[2023-11-06 23:05:36,976][root][INFO] - val:
+[2023-11-06 23:05:38,618][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_187_0.8866000175476074.pth
+[2023-11-06 23:05:38,619][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88660
+[2023-11-06 23:05:38,620][root][INFO] - ===> epoch: 188/300
+[2023-11-06 23:05:38,620][root][INFO] - train:
+[2023-11-06 23:06:23,585][root][INFO] - val:
+[2023-11-06 23:06:25,243][root][INFO] - ===> epoch: 189/300
+[2023-11-06 23:06:25,244][root][INFO] - train:
+[2023-11-06 23:07:09,587][root][INFO] - val:
+[2023-11-06 23:07:11,251][root][INFO] - ===> epoch: 190/300
+[2023-11-06 23:07:11,251][root][INFO] - train:
+[2023-11-06 23:07:56,078][root][INFO] - val:
+[2023-11-06 23:07:57,768][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_190_0.pth
+[2023-11-06 23:07:57,769][root][INFO] - ===> epoch: 191/300
+[2023-11-06 23:07:57,769][root][INFO] - train:
+[2023-11-06 23:08:42,736][root][INFO] - val:
+[2023-11-06 23:08:44,387][root][INFO] - ===> epoch: 192/300
+[2023-11-06 23:08:44,388][root][INFO] - train:
+[2023-11-06 23:09:29,247][root][INFO] - val:
+[2023-11-06 23:09:30,881][root][INFO] - ===> epoch: 193/300
+[2023-11-06 23:09:30,881][root][INFO] - train:
+[2023-11-06 23:10:15,451][root][INFO] - val:
+[2023-11-06 23:10:17,339][root][INFO] - ===> epoch: 194/300
+[2023-11-06 23:10:17,339][root][INFO] - train:
+[2023-11-06 23:11:01,967][root][INFO] - val:
+[2023-11-06 23:11:03,497][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_194_0.8881999850273132.pth
+[2023-11-06 23:11:03,498][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88820
+[2023-11-06 23:11:03,499][root][INFO] - ===> epoch: 195/300
+[2023-11-06 23:11:03,499][root][INFO] - train:
+[2023-11-06 23:11:48,492][root][INFO] - val:
+[2023-11-06 23:11:50,025][root][INFO] - ===> epoch: 196/300
+[2023-11-06 23:11:50,025][root][INFO] - train:
+[2023-11-06 23:12:35,023][root][INFO] - val:
+[2023-11-06 23:12:36,663][root][INFO] - ===> epoch: 197/300
+[2023-11-06 23:12:36,663][root][INFO] - train:
+[2023-11-06 23:13:21,772][root][INFO] - val:
+[2023-11-06 23:13:23,324][root][INFO] - ===> epoch: 198/300
+[2023-11-06 23:13:23,324][root][INFO] - train:
+[2023-11-06 23:14:07,965][root][INFO] - val:
+[2023-11-06 23:14:10,051][root][INFO] - ===> epoch: 199/300
+[2023-11-06 23:14:10,051][root][INFO] - train:
+[2023-11-06 23:14:54,568][root][INFO] - val:
+[2023-11-06 23:14:56,132][root][INFO] - ===> epoch: 200/300
+[2023-11-06 23:14:56,132][root][INFO] - train:
+[2023-11-06 23:15:41,082][root][INFO] - val:
+[2023-11-06 23:15:42,658][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_200_0.pth
+[2023-11-06 23:15:42,658][root][INFO] - ===> epoch: 201/300
+[2023-11-06 23:15:42,660][root][INFO] - train:
+[2023-11-06 23:16:27,630][root][INFO] - val:
+[2023-11-06 23:16:29,283][root][INFO] - ===> epoch: 202/300
+[2023-11-06 23:16:29,284][root][INFO] - train:
+[2023-11-06 23:17:14,245][root][INFO] - val:
+[2023-11-06 23:17:15,792][root][INFO] - ===> epoch: 203/300
+[2023-11-06 23:17:15,792][root][INFO] - train:
+[2023-11-06 23:18:00,496][root][INFO] - val:
+[2023-11-06 23:18:02,113][root][INFO] - ===> epoch: 204/300
+[2023-11-06 23:18:02,113][root][INFO] - train:
+[2023-11-06 23:18:46,722][root][INFO] - val:
+[2023-11-06 23:18:48,421][root][INFO] - ===> epoch: 205/300
+[2023-11-06 23:18:48,421][root][INFO] - train:
+[2023-11-06 23:19:33,122][root][INFO] - val:
+[2023-11-06 23:19:34,756][root][INFO] - ===> epoch: 206/300
+[2023-11-06 23:19:34,756][root][INFO] - train:
+[2023-11-06 23:20:19,717][root][INFO] - val:
+[2023-11-06 23:20:21,273][root][INFO] - ===> epoch: 207/300
+[2023-11-06 23:20:21,274][root][INFO] - train:
+[2023-11-06 23:21:06,210][root][INFO] - val:
+[2023-11-06 23:21:07,745][root][INFO] - ===> epoch: 208/300
+[2023-11-06 23:21:07,746][root][INFO] - train:
+[2023-11-06 23:21:52,686][root][INFO] - val:
+[2023-11-06 23:21:54,232][root][INFO] - ===> epoch: 209/300
+[2023-11-06 23:21:54,233][root][INFO] - train:
+[2023-11-06 23:22:38,773][root][INFO] - val:
+[2023-11-06 23:22:40,743][root][INFO] - ===> epoch: 210/300
+[2023-11-06 23:22:40,743][root][INFO] - train:
+[2023-11-06 23:23:25,293][root][INFO] - val:
+[2023-11-06 23:23:26,917][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_210_0.pth
+[2023-11-06 23:23:26,918][root][INFO] - ===> epoch: 211/300
+[2023-11-06 23:23:26,919][root][INFO] - train:
+[2023-11-06 23:24:11,668][root][INFO] - val:
+[2023-11-06 23:24:13,156][root][INFO] - ===> epoch: 212/300
+[2023-11-06 23:24:13,157][root][INFO] - train:
+[2023-11-06 23:24:58,197][root][INFO] - val:
+[2023-11-06 23:24:59,722][root][INFO] - ===> epoch: 213/300
+[2023-11-06 23:24:59,723][root][INFO] - train:
+[2023-11-06 23:25:44,684][root][INFO] - val:
+[2023-11-06 23:25:46,348][root][INFO] - ===> epoch: 214/300
+[2023-11-06 23:25:46,348][root][INFO] - train:
+[2023-11-06 23:26:31,346][root][INFO] - val:
+[2023-11-06 23:26:33,010][root][INFO] - ===> epoch: 215/300
+[2023-11-06 23:26:33,010][root][INFO] - train:
+[2023-11-06 23:27:17,624][root][INFO] - val:
+[2023-11-06 23:27:19,226][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_215_0.8892999887466431.pth
+[2023-11-06 23:27:19,226][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88930
+[2023-11-06 23:27:19,227][root][INFO] - ===> epoch: 216/300
+[2023-11-06 23:27:19,227][root][INFO] - train:
+[2023-11-06 23:28:03,977][root][INFO] - val:
+[2023-11-06 23:28:05,659][root][INFO] - ===> epoch: 217/300
+[2023-11-06 23:28:05,660][root][INFO] - train:
+[2023-11-06 23:28:50,593][root][INFO] - val:
+[2023-11-06 23:28:52,175][root][INFO] - ===> epoch: 218/300
+[2023-11-06 23:28:52,176][root][INFO] - train:
+[2023-11-06 23:29:37,035][root][INFO] - val:
+[2023-11-06 23:29:38,652][root][INFO] - ===> epoch: 219/300
+[2023-11-06 23:29:38,653][root][INFO] - train:
+[2023-11-06 23:30:23,332][root][INFO] - val:
+[2023-11-06 23:30:25,103][root][INFO] - ===> epoch: 220/300
+[2023-11-06 23:30:25,103][root][INFO] - train:
+[2023-11-06 23:31:09,639][root][INFO] - val:
+[2023-11-06 23:31:11,212][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_220_0.pth
+[2023-11-06 23:31:11,213][root][INFO] - ===> epoch: 221/300
+[2023-11-06 23:31:11,213][root][INFO] - train:
+[2023-11-06 23:31:55,909][root][INFO] - val:
+[2023-11-06 23:31:57,468][root][INFO] - ===> epoch: 222/300
+[2023-11-06 23:31:57,469][root][INFO] - train:
+[2023-11-06 23:32:42,341][root][INFO] - val:
+[2023-11-06 23:32:43,941][root][INFO] - ===> epoch: 223/300
+[2023-11-06 23:32:43,941][root][INFO] - train:
+[2023-11-06 23:33:28,765][root][INFO] - val:
+[2023-11-06 23:33:30,434][root][INFO] - ===> epoch: 224/300
+[2023-11-06 23:33:30,434][root][INFO] - train:
+[2023-11-06 23:34:14,978][root][INFO] - val:
+[2023-11-06 23:34:16,587][root][INFO] - ===> epoch: 225/300
+[2023-11-06 23:34:16,587][root][INFO] - train:
+[2023-11-06 23:35:01,624][root][INFO] - val:
+[2023-11-06 23:35:03,234][root][INFO] - ===> epoch: 226/300
+[2023-11-06 23:35:03,234][root][INFO] - train:
+[2023-11-06 23:35:48,099][root][INFO] - val:
+[2023-11-06 23:35:49,729][root][INFO] - ===> epoch: 227/300
+[2023-11-06 23:35:49,730][root][INFO] - train:
+[2023-11-06 23:36:34,582][root][INFO] - val:
+[2023-11-06 23:36:36,234][root][INFO] - ===> epoch: 228/300
+[2023-11-06 23:36:36,235][root][INFO] - train:
+[2023-11-06 23:37:20,985][root][INFO] - val:
+[2023-11-06 23:37:22,559][root][INFO] - ===> epoch: 229/300
+[2023-11-06 23:37:22,560][root][INFO] - train:
+[2023-11-06 23:38:06,945][root][INFO] - val:
+[2023-11-06 23:38:08,789][root][INFO] - ===> epoch: 230/300
+[2023-11-06 23:38:08,789][root][INFO] - train:
+[2023-11-06 23:38:53,306][root][INFO] - val:
+[2023-11-06 23:38:54,910][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_230_0.pth
+[2023-11-06 23:38:54,910][root][INFO] - ===> epoch: 231/300
+[2023-11-06 23:38:54,911][root][INFO] - train:
+[2023-11-06 23:39:39,820][root][INFO] - val:
+[2023-11-06 23:39:41,367][root][INFO] - ===> epoch: 232/300
+[2023-11-06 23:39:41,367][root][INFO] - train:
+[2023-11-06 23:40:26,214][root][INFO] - val:
+[2023-11-06 23:40:27,841][root][INFO] - ===> epoch: 233/300
+[2023-11-06 23:40:27,841][root][INFO] - train:
+[2023-11-06 23:41:12,696][root][INFO] - val:
+[2023-11-06 23:41:14,131][root][INFO] - ===> epoch: 234/300
+[2023-11-06 23:41:14,131][root][INFO] - train:
+[2023-11-06 23:41:58,939][root][INFO] - val:
+[2023-11-06 23:42:00,509][root][INFO] - ===> epoch: 235/300
+[2023-11-06 23:42:00,510][root][INFO] - train:
+[2023-11-06 23:42:44,988][root][INFO] - val:
+[2023-11-06 23:42:46,530][root][INFO] - ===> epoch: 236/300
+[2023-11-06 23:42:46,530][root][INFO] - train:
+[2023-11-06 23:43:31,421][root][INFO] - val:
+[2023-11-06 23:43:32,983][root][INFO] - ===> epoch: 237/300
+[2023-11-06 23:43:32,983][root][INFO] - train:
+[2023-11-06 23:44:18,049][root][INFO] - val:
+[2023-11-06 23:44:19,491][root][INFO] - ===> epoch: 238/300
+[2023-11-06 23:44:19,492][root][INFO] - train:
+[2023-11-06 23:45:04,240][root][INFO] - val:
+[2023-11-06 23:45:05,821][root][INFO] - ===> epoch: 239/300
+[2023-11-06 23:45:05,821][root][INFO] - train:
+[2023-11-06 23:45:50,275][root][INFO] - val:
+[2023-11-06 23:45:51,972][root][INFO] - ===> epoch: 240/300
+[2023-11-06 23:45:51,973][root][INFO] - train:
+[2023-11-06 23:46:36,992][root][INFO] - val:
+[2023-11-06 23:46:38,666][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_240_0.pth
+[2023-11-06 23:46:38,667][root][INFO] - ===> epoch: 241/300
+[2023-11-06 23:46:38,667][root][INFO] - train:
+[2023-11-06 23:47:23,602][root][INFO] - val:
+[2023-11-06 23:47:25,309][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_241_0.8896999955177307.pth
+[2023-11-06 23:47:25,310][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.88970
+[2023-11-06 23:47:25,310][root][INFO] - ===> epoch: 242/300
+[2023-11-06 23:47:25,311][root][INFO] - train:
+[2023-11-06 23:48:10,052][root][INFO] - val:
+[2023-11-06 23:48:11,621][root][INFO] - ===> epoch: 243/300
+[2023-11-06 23:48:11,621][root][INFO] - train:
+[2023-11-06 23:48:56,489][root][INFO] - val:
+[2023-11-06 23:48:58,117][root][INFO] - ===> epoch: 244/300
+[2023-11-06 23:48:58,118][root][INFO] - train:
+[2023-11-06 23:49:42,785][root][INFO] - val:
+[2023-11-06 23:49:44,688][root][INFO] - ===> epoch: 245/300
+[2023-11-06 23:49:44,688][root][INFO] - train:
+[2023-11-06 23:50:29,352][root][INFO] - val:
+[2023-11-06 23:50:30,922][root][INFO] - ===> epoch: 246/300
+[2023-11-06 23:50:30,922][root][INFO] - train:
+[2023-11-06 23:51:15,786][root][INFO] - val:
+[2023-11-06 23:51:17,411][root][INFO] - ===> epoch: 247/300
+[2023-11-06 23:51:17,411][root][INFO] - train:
+[2023-11-06 23:52:02,199][root][INFO] - val:
+[2023-11-06 23:52:03,736][root][INFO] - ===> epoch: 248/300
+[2023-11-06 23:52:03,737][root][INFO] - train:
+[2023-11-06 23:52:48,759][root][INFO] - val:
+[2023-11-06 23:52:50,379][root][INFO] - ===> epoch: 249/300
+[2023-11-06 23:52:50,380][root][INFO] - train:
+[2023-11-06 23:53:35,289][root][INFO] - val:
+[2023-11-06 23:53:36,884][root][INFO] - ===> epoch: 250/300
+[2023-11-06 23:53:36,885][root][INFO] - train:
+[2023-11-06 23:54:21,535][root][INFO] - val:
+[2023-11-06 23:54:23,112][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_250_0.pth
+[2023-11-06 23:54:23,112][root][INFO] - ===> epoch: 251/300
+[2023-11-06 23:54:23,113][root][INFO] - train:
+[2023-11-06 23:55:08,075][root][INFO] - val:
+[2023-11-06 23:55:09,696][root][INFO] - ===> epoch: 252/300
+[2023-11-06 23:55:09,696][root][INFO] - train:
+[2023-11-06 23:55:54,497][root][INFO] - val:
+[2023-11-06 23:55:56,025][root][INFO] - ===> epoch: 253/300
+[2023-11-06 23:55:56,025][root][INFO] - train:
+[2023-11-06 23:56:40,795][root][INFO] - val:
+[2023-11-06 23:56:42,288][root][INFO] - ===> epoch: 254/300
+[2023-11-06 23:56:42,288][root][INFO] - train:
+[2023-11-06 23:57:27,123][root][INFO] - val:
+[2023-11-06 23:57:28,676][root][INFO] - ===> epoch: 255/300
+[2023-11-06 23:57:28,676][root][INFO] - train:
+[2023-11-06 23:58:13,259][root][INFO] - val:
+[2023-11-06 23:58:14,820][root][INFO] - ===> epoch: 256/300
+[2023-11-06 23:58:14,820][root][INFO] - train:
+[2023-11-06 23:58:59,656][root][INFO] - val:
+[2023-11-06 23:59:01,300][root][INFO] - ===> epoch: 257/300
+[2023-11-06 23:59:01,301][root][INFO] - train:
+[2023-11-06 23:59:45,957][root][INFO] - val:
+[2023-11-06 23:59:47,621][root][INFO] - ===> epoch: 258/300
+[2023-11-06 23:59:47,621][root][INFO] - train:
+[2023-11-07 00:00:32,726][root][INFO] - val:
+[2023-11-07 00:00:34,288][root][INFO] - ===> epoch: 259/300
+[2023-11-07 00:00:34,288][root][INFO] - train:
+[2023-11-07 00:01:18,892][root][INFO] - val:
+[2023-11-07 00:01:20,725][root][INFO] - ===> epoch: 260/300
+[2023-11-07 00:01:20,725][root][INFO] - train:
+[2023-11-07 00:02:05,223][root][INFO] - val:
+[2023-11-07 00:02:06,792][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_260_0.pth
+[2023-11-07 00:02:06,793][root][INFO] - ===> epoch: 261/300
+[2023-11-07 00:02:06,793][root][INFO] - train:
+[2023-11-07 00:02:51,854][root][INFO] - val:
+[2023-11-07 00:02:53,436][root][INFO] - ===> epoch: 262/300
+[2023-11-07 00:02:53,437][root][INFO] - train:
+[2023-11-07 00:03:38,297][root][INFO] - val:
+[2023-11-07 00:03:39,896][root][INFO] - ===> epoch: 263/300
+[2023-11-07 00:03:39,896][root][INFO] - train:
+[2023-11-07 00:04:24,671][root][INFO] - val:
+[2023-11-07 00:04:26,235][root][INFO] - ===> epoch: 264/300
+[2023-11-07 00:04:26,236][root][INFO] - train:
+[2023-11-07 00:05:11,197][root][INFO] - val:
+[2023-11-07 00:05:12,680][root][INFO] - ===> epoch: 265/300
+[2023-11-07 00:05:12,681][root][INFO] - train:
+[2023-11-07 00:05:57,191][root][INFO] - val:
+[2023-11-07 00:05:58,861][root][INFO] - ===> epoch: 266/300
+[2023-11-07 00:05:58,862][root][INFO] - train:
+[2023-11-07 00:06:43,636][root][INFO] - val:
+[2023-11-07 00:06:45,191][root][INFO] - ===> epoch: 267/300
+[2023-11-07 00:06:45,191][root][INFO] - train:
+[2023-11-07 00:07:30,045][root][INFO] - val:
+[2023-11-07 00:07:31,679][root][INFO] - ===> epoch: 268/300
+[2023-11-07 00:07:31,679][root][INFO] - train:
+[2023-11-07 00:08:16,452][root][INFO] - val:
+[2023-11-07 00:08:18,003][root][INFO] - ===> epoch: 269/300
+[2023-11-07 00:08:18,003][root][INFO] - train:
+[2023-11-07 00:09:02,832][root][INFO] - val:
+[2023-11-07 00:09:04,268][root][INFO] - ===> epoch: 270/300
+[2023-11-07 00:09:04,269][root][INFO] - train:
+[2023-11-07 00:09:48,793][root][INFO] - val:
+[2023-11-07 00:09:50,486][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_270_0.pth
+[2023-11-07 00:09:50,487][root][INFO] - ===> epoch: 271/300
+[2023-11-07 00:09:50,487][root][INFO] - train:
+[2023-11-07 00:10:35,370][root][INFO] - val:
+[2023-11-07 00:10:36,945][root][INFO] - ===> epoch: 272/300
+[2023-11-07 00:10:36,946][root][INFO] - train:
+[2023-11-07 00:11:21,933][root][INFO] - val:
+[2023-11-07 00:11:23,604][root][INFO] - ===> epoch: 273/300
+[2023-11-07 00:11:23,605][root][INFO] - train:
+[2023-11-07 00:12:08,400][root][INFO] - val:
+[2023-11-07 00:12:09,891][root][INFO] - ===> epoch: 274/300
+[2023-11-07 00:12:09,892][root][INFO] - train:
+[2023-11-07 00:12:54,589][root][INFO] - val:
+[2023-11-07 00:12:56,650][root][INFO] - ===> epoch: 275/300
+[2023-11-07 00:12:56,650][root][INFO] - train:
+[2023-11-07 00:13:41,196][root][INFO] - val:
+[2023-11-07 00:13:42,737][root][INFO] - ===> epoch: 276/300
+[2023-11-07 00:13:42,737][root][INFO] - train:
+[2023-11-07 00:14:27,587][root][INFO] - val:
+[2023-11-07 00:14:29,226][root][INFO] - ===> epoch: 277/300
+[2023-11-07 00:14:29,226][root][INFO] - train:
+[2023-11-07 00:15:14,000][root][INFO] - val:
+[2023-11-07 00:15:15,564][root][INFO] - ===> epoch: 278/300
+[2023-11-07 00:15:15,565][root][INFO] - train:
+[2023-11-07 00:16:00,583][root][INFO] - val:
+[2023-11-07 00:16:02,214][root][INFO] - ===> epoch: 279/300
+[2023-11-07 00:16:02,214][root][INFO] - train:
+[2023-11-07 00:16:47,046][root][INFO] - val:
+[2023-11-07 00:16:48,703][root][INFO] - ===> epoch: 280/300
+[2023-11-07 00:16:48,703][root][INFO] - train:
+[2023-11-07 00:17:33,218][root][INFO] - val:
+[2023-11-07 00:17:34,886][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_280_0.pth
+[2023-11-07 00:17:34,887][root][INFO] - ===> epoch: 281/300
+[2023-11-07 00:17:34,887][root][INFO] - train:
+[2023-11-07 00:18:19,638][root][INFO] - val:
+[2023-11-07 00:18:21,196][root][INFO] - ===> epoch: 282/300
+[2023-11-07 00:18:21,196][root][INFO] - train:
+[2023-11-07 00:19:06,200][root][INFO] - val:
+[2023-11-07 00:19:07,844][root][INFO] - ===> epoch: 283/300
+[2023-11-07 00:19:07,844][root][INFO] - train:
+[2023-11-07 00:19:52,566][root][INFO] - val:
+[2023-11-07 00:19:54,172][root][INFO] - ===> epoch: 284/300
+[2023-11-07 00:19:54,172][root][INFO] - train:
+[2023-11-07 00:20:39,045][root][INFO] - val:
+[2023-11-07 00:20:40,665][root][INFO] - ===> epoch: 285/300
+[2023-11-07 00:20:40,666][root][INFO] - train:
+[2023-11-07 00:21:25,175][root][INFO] - val:
+[2023-11-07 00:21:26,815][root][INFO] - ===> epoch: 286/300
+[2023-11-07 00:21:26,815][root][INFO] - train:
+[2023-11-07 00:22:11,474][root][INFO] - val:
+[2023-11-07 00:22:13,000][root][INFO] - ===> epoch: 287/300
+[2023-11-07 00:22:13,000][root][INFO] - train:
+[2023-11-07 00:22:58,056][root][INFO] - val:
+[2023-11-07 00:22:59,651][root][INFO] - ===> epoch: 288/300
+[2023-11-07 00:22:59,652][root][INFO] - train:
+[2023-11-07 00:23:44,283][root][INFO] - val:
+[2023-11-07 00:23:45,948][root][INFO] - ===> epoch: 289/300
+[2023-11-07 00:23:45,948][root][INFO] - train:
+[2023-11-07 00:24:30,644][root][INFO] - val:
+[2023-11-07 00:24:32,711][root][INFO] - ===> epoch: 290/300
+[2023-11-07 00:24:32,711][root][INFO] - train:
+[2023-11-07 00:25:17,259][root][INFO] - val:
+[2023-11-07 00:25:18,789][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_290_0.pth
+[2023-11-07 00:25:18,790][root][INFO] - ===> epoch: 291/300
+[2023-11-07 00:25:18,790][root][INFO] - train:
+[2023-11-07 00:26:03,561][root][INFO] - val:
+[2023-11-07 00:26:05,116][root][INFO] - ===> epoch: 292/300
+[2023-11-07 00:26:05,117][root][INFO] - train:
+[2023-11-07 00:26:49,778][root][INFO] - val:
+[2023-11-07 00:26:51,437][root][INFO] - ===> epoch: 293/300
+[2023-11-07 00:26:51,437][root][INFO] - train:
+[2023-11-07 00:27:36,319][root][INFO] - val:
+[2023-11-07 00:27:37,975][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_293_0.8913999795913696.pth
+[2023-11-07 00:27:37,976][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.89140
+[2023-11-07 00:27:37,977][root][INFO] - ===> epoch: 294/300
+[2023-11-07 00:27:37,977][root][INFO] - train:
+[2023-11-07 00:28:22,643][root][INFO] - val:
+[2023-11-07 00:28:24,445][root][INFO] - ===> epoch: 295/300
+[2023-11-07 00:28:24,446][root][INFO] - train:
+[2023-11-07 00:29:08,987][root][INFO] - val:
+[2023-11-07 00:29:10,614][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_295_0.8920000195503235.pth
+[2023-11-07 00:29:10,614][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.89200
+[2023-11-07 00:29:10,615][root][INFO] - ===> epoch: 296/300
+[2023-11-07 00:29:10,615][root][INFO] - train:
+[2023-11-07 00:29:55,439][root][INFO] - val:
+[2023-11-07 00:29:57,111][root][INFO] - Checkpoint saved to C:\Users\GeorgeS\Documents\facultate\master\projects\data\model_weights\CIFAR-10/PreResNet/CyclicBS\2525\model_296_0.8924999833106995.pth
+[2023-11-07 00:29:57,112][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.89250
+[2023-11-07 00:29:57,113][root][INFO] - ===> epoch: 297/300
+[2023-11-07 00:29:57,113][root][INFO] - train:
+[2023-11-07 00:30:42,194][root][INFO] - val:
+[2023-11-07 00:30:43,728][root][INFO] - ===> epoch: 298/300
+[2023-11-07 00:30:43,729][root][INFO] - train:
+[2023-11-07 00:31:28,498][root][INFO] - val:
+[2023-11-07 00:31:30,057][root][INFO] - ===> epoch: 299/300
+[2023-11-07 00:31:30,057][root][INFO] - train:
+[2023-11-07 00:32:14,573][root][INFO] - val:
+[2023-11-07 00:32:16,200][root][INFO] - ===> BEST Val/Accuracy PERFORMANCE: 0.89250
+[2023-11-07 00:32:44,033][root][INFO] - Saved best accuracy checkpoint
