@@ -1,0 +1,14 @@
+# @package scheduler
+
+name: OneCycleLR
+
+OneCycleLR:
+  max_lr: 0.02
+  total_steps:
+  epochs: ${epochs}
+  steps_per_epoch: 1
+  anneal_strategy: 'linear'
+  cycle_momentum: False
+  div_factor: 20.0
+
+type: lr_scheduler

@@ -1,0 +1,12 @@
+# @package scheduler
+
+name: OneCycleBS
+
+OneCycleBS:
+  total_steps: ${epochs}
+  strategy: 'cos'
+  base_batch_size: 80
+  max_batch_size: 180
+  min_batch_size: 25
+
+type: bs_scheduler

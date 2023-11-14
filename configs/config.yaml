@@ -15,7 +15,7 @@ defaults:
   - metrics@solver_metrics: [solver] 
   - model: PreResNet20
   - optimizer: sgd 
-  - scheduler: CosineAnnealingLR
+  - scheduler: OneCycleLR
   - override hydra/sweeper: basic   # nevergrad | basic
   - override hydra/launcher: basic
 

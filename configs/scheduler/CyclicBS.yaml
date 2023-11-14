@@ -1,0 +1,13 @@
+# @package scheduler
+
+name: CyclicBS
+
+CyclicBS:
+  step_size_down: 10
+  gamma: 0.9
+  mode: "triangular2"
+  max_batch_size: 330
+  base_batch_size: 80
+  min_batch_size: 5
+
+type: bs_scheduler

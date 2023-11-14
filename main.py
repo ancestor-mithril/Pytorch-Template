@@ -178,8 +178,8 @@ class Solver:
             self.scheduler.step()
         elif self.scheduler_name == "ReduceLROnPlateau":
             self.scheduler.step(metrics_results[self.args.scheduler_metric])
-        elif self.scheduler_name == "OneCycleLR":
-            pass
+        # elif self.scheduler_name in ("OneCycleLR", "OneCycleBS", "CyclicLR", "CyclicBS"):
+        #     pass
         else:
             self.scheduler.step()
 
@@ -421,8 +421,9 @@ class Solver:
             torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.args.optimizer.max_norm)
 
     def train_maybe_step_scheduler(self):
-        if self.scheduler_name == "OneCycleLR":
-            self.scheduler.step()
+        # if self.scheduler_name in ("OneCycleLR", "OneCycleBS", "CyclicLR", "CyclicBS"):
+        #     self.scheduler.step()
+        pass
 
     def train_maybe_do_update(self, data, target):
         if self.train_batch_plot_idx % self.args.train_dataset.update_every == 0:
@@ -468,7 +469,12 @@ class Solver:
             self.optimizer.step()
             self.optimizer.zero_grad(set_to_none=True)
 
-            predictions.extend(output.detach().cpu())
+            self.train_maybe_step_scheduler()
+            output = output.detach()
+            self.save_batch_metrics(output, target, "train")
+            predictions.extend(output.cpu())
+
+            # predictions.extend(output.detach().cpu())
             targets.extend(target.cpu())
 
         return {
@@ -504,10 +510,11 @@ class Solver:
 
             self.train_maybe_do_update(data, target)
 
-            predictions.extend(output.detach().cpu())
+            output = output.detach()
+            predictions.extend(output.cpu())
             targets.extend(target.cpu())
 
-            # self.save_batch_metrics(output, target, "train")
+            self.save_batch_metrics(output, target, "train")
 
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,

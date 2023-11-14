@@ -3,7 +3,7 @@
 name: CosineAnnealingBS
 
 CosineAnnealingBS:
-  total_iters: 300
-  max_batch_size: 320
+  total_iters: 100
+  max_batch_size: 160
 
 type: bs_scheduler
