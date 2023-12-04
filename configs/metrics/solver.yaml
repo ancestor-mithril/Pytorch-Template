@@ -9,9 +9,9 @@
 "Learning Rate":
   parameters:
   aggregator:
-  levels: ['batch', 'epoch']
+  levels: ['epoch']
 
 "Batch Size":
   parameters:
   aggregator:
-  levels: ['batch', 'epoch' ]
+  levels: ['epoch' ]

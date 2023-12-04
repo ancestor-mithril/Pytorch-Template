@@ -4,12 +4,12 @@ half: True
 grad_scaler: False
 device: 'cuda:0'
 seed: 2525
-progress_bar: True
+progress_bar: False
 
 save_model: True
 save_interval: 10
 
-epochs: 300
+epochs: 400
 val_every: 1
 es_patience: 100000
 es_min_delta: 0.0001

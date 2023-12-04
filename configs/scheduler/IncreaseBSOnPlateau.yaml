@@ -1,0 +1,12 @@
+# @package scheduler
+
+name: IncreaseBSOnPlateau
+
+IncreaseBSOnPlateau:
+  factor: 2.0
+  patience: 10
+  max_batch_size: 600
+  verbose: True
+  threshold: 0.0005
+
+type: bs_scheduler

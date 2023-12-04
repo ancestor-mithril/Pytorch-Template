@@ -3,11 +3,11 @@
 Accuracy:
   parameters:
   aggregator: 'mean'
-  levels: ['epoch']
+  levels: ['batch']
   higher_is_better: true
 
 crossentropyloss:
   parameters:
   aggregator: 'mean'
-  levels: ['epoch']
+  levels: ['batch']
   higher_is_better: False

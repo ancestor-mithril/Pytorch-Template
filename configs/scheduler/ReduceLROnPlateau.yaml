@@ -4,7 +4,9 @@ name: ReduceLROnPlateau
 
 ReduceLROnPlateau:
   factor: 0.5
-  patience: 25
+  patience: 10
   min_lr: 0.0000001
   verbose: True
   threshold: 0.0005
+
+type: lr_scheduler

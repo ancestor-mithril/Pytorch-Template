@@ -107,6 +107,10 @@ class Solver:
             self.model = load_model(self.args.model, self.args.load_model, self.model, self.device)
 
         self.model = self.model.to(self.device)
+        if False:  # trace  True
+            self.model = torch.jit.trace(self.model, torch.rand((2, *self.train_set[0][0].shape), device=self.device))
+        elif False:  # script
+            self.model = torch.jit.script(self.model)
 
     def init_optimizer(self):
         self.optimizer = init_optimizer(self.args.optimizer, self.model)
@@ -178,6 +182,8 @@ class Solver:
             self.scheduler.step()
         elif self.scheduler_name == "ReduceLROnPlateau":
             self.scheduler.step(metrics_results[self.args.scheduler_metric])
+        elif self.scheduler_name == "IncreaseBSOnPlateau":
+            self.scheduler.step(metric=metrics_results[self.args.scheduler_metric])
         # elif self.scheduler_name in ("OneCycleLR", "OneCycleBS", "CyclicLR", "CyclicBS"):
         #     pass
         else:
