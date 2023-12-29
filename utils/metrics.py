@@ -267,6 +267,7 @@ class Model_Norm(object):
     def __init__(self, norm_type=2):
         self.norm_type = norm_type
 
+    @torch.inference_mode()
     def __call__(self, **kwargs):
         norm = 0.0
         for param in kwargs["solver"].model.parameters():

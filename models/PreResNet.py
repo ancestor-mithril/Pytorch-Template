@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+import torch
 import math
 import torch.nn as nn
 
@@ -24,7 +25,7 @@ class Bottleneck(nn.Module):
         self.downsample = downsample
         self.stride = stride
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor):
         residual = x
 
         out = self.bn1(x)
@@ -104,7 +105,7 @@ class PreResNet(nn.Module):
 
         return nn.Sequential(*layers)
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor):
         x = self.conv1(x)
 
         x = self.layer1(x)  # 32x32

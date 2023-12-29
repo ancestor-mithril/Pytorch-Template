@@ -107,10 +107,20 @@ class Solver:
             self.model = load_model(self.args.model, self.args.load_model, self.model, self.device)
 
         self.model = self.model.to(self.device)
-        if False:  # trace  True
-            self.model = torch.jit.trace(self.model, torch.rand((2, *self.train_set[0][0].shape), device=self.device))
-        elif False:  # script
+
+        if os.name == 'nt' and self.args.compile == 'compile':
+            self.args.compile = 'script'
+
+        if self.args.compile == 'trace':
+            self.model = torch.jit.trace(self.model, torch.rand((1, *self.train_set[0][0].shape), device=self.device))
+        elif self.args.compile == 'script':  # script
             self.model = torch.jit.script(self.model)
+        elif self.args.compile == 'script-with-example':  # script
+            self.model = torch.jit.script(self.model, example_inputs=[
+                (torch.rand((1, *self.train_set[0][0].shape), device=self.device),)
+            ])
+        elif self.args.compile == 'compile':
+            self.model = torch.compile(self.model, **self.args.compile_args)
 
     def init_optimizer(self):
         self.optimizer = init_optimizer(self.args.optimizer, self.model)
@@ -313,9 +323,8 @@ class Solver:
         return loss
 
     def train_get_output_and_loss(self, data, target, hidden, is_train=True):
-        with autocast(enabled=self.args.half, device_type=self.device_type):
-            output = self.train_get_output(data, hidden)
-            return output, self.train_get_loss(output, target, is_train)
+        output = self.train_get_output(data, hidden)
+        return output, self.train_get_loss(output, target, is_train)
 
     def train_maybe_apply_grad_penalty(self, loss):
         # TODO: check self.args.optimizer.grad_penalty > 0.0
@@ -459,13 +468,13 @@ class Solver:
         predictions = []
         targets = []
         loss_sum = 0.0
-
         for data, target in self.prepare_loader(self.train_loader):
             data = data.to(self.device, non_blocking=True)
             target = target.to(self.device, non_blocking=True)
 
-            output = self.model(data)
-            loss = self.criterion(output, target)
+            with autocast(enabled=self.args.half, device_type=self.device_type):
+                output = self.model(data)
+                loss = self.criterion(output, target)
 
             loss_sum += loss.item()
             loss.backward()
@@ -475,12 +484,12 @@ class Solver:
             self.optimizer.step()
             self.optimizer.zero_grad(set_to_none=True)
 
-            self.train_maybe_step_scheduler()
-            output = output.detach()
-            self.save_batch_metrics(output, target, "train")
-            predictions.extend(output.cpu())
+            # self.train_maybe_step_scheduler()
+            # output = output.detach()
+            # self.save_batch_metrics(output, target, "train")
+            # predictions.extend(output.cpu())
 
-            # predictions.extend(output.detach().cpu())
+            predictions.extend(output.detach().cpu())
             targets.extend(target.cpu())
 
         return {
@@ -505,7 +514,8 @@ class Solver:
             target = to_device(target, self.device)
 
             while True:
-                output, loss = self.train_get_output_and_loss(data, target, hidden)
+                with autocast(enabled=self.args.half, device_type=self.device_type):
+                    output, loss = self.train_get_output_and_loss(data, target, hidden)
 
                 loss = self.train_maybe_apply_grad_penalty(loss)
 
@@ -528,7 +538,7 @@ class Solver:
             "loss": loss_sum / len(self.train_loader),
         }
 
-    @torch.no_grad()
+    @torch.inference_mode()
     def val(self, do_test):
         self.model.eval()
 
@@ -551,13 +561,14 @@ class Solver:
             data = to_device(data, self.device)
             target = to_device(target, self.device)
 
-            output, loss = self.train_get_output_and_loss(data, target, hidden, is_train=False)
+            with autocast(enabled=self.args.half, device_type=self.device_type):
+                output, loss = self.train_get_output_and_loss(data, target, hidden, is_train=False)
 
             predictions.extend(output)
             targets.extend(target)
             loss_sum += loss.item()
 
-            self.save_batch_metrics(output, target, metric_type)
+            # self.save_batch_metrics(output, target, metric_type)
 
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,

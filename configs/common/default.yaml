@@ -5,6 +5,14 @@ grad_scaler: False
 device: 'cuda:0'
 seed: 2525
 progress_bar: False
+compile: 'trace'  # 'trace' or 'script' or 'script-with-example' or 'compile' or 'nothing'
+compile_args:
+  fullgraph: False
+  dynamic:
+  backend: "inductor"
+  mode:
+  options:
+  disabled: False
 
 save_model: True
 save_interval: 10
