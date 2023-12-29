@@ -578,6 +578,7 @@ class Solver:
         }
 
     def run(self):
+        total_training_time = 0.0
         self.init()
         try:
             self.maybe_infer()
@@ -589,10 +590,10 @@ class Solver:
                 start = default_timer()
                 train_results = self.simple_train()
                 end = default_timer()
+                total_training_time += end - start
+                self.writer.add_scalar("Train/Time", total_training_time, self.epoch)
 
                 with torch.inference_mode():
-                    self.writer.add_scalar("Train/Time", end - start, self.epoch)
-
                     metrics_results = {}
                     metrics_results = register_metrics(self.metrics, "train", "epoch", metrics_results, **train_results)
 
