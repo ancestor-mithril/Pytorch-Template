@@ -15,18 +15,19 @@ def register_metrics(training_metrics: Dict[str, Dict[str, Sequence[Metric]]], m
                      metric_results: dict, **kwargs) -> dict:
     metric_prefix = metric_type.capitalize() + "/"
     metric_prefix += "Batch-" if metric_level == "batch" else ""
-    with autocast(enabled=True, device_type="cpu"):
-        # Needed for calculating cross entropy metric, otherwise I receive
-        # "log_softmax_lastdim_kernel_impl" not implemented for 'Half'
-        for metric in training_metrics[metric_type][metric_level]:
-            metric_name = metric_prefix + metric.name
-            result = metric.calculate(level=metric_level, **kwargs)
-            if type(result) is dict:
-                for each_key in result.keys():
-                    metric_results[metric_name + f"_{each_key}"] = result[each_key]
-            else:
-                metric_results[metric_name] = result
-        return metric_results
+
+    for metric in training_metrics[metric_type][metric_level]:
+        metric_name = metric_prefix + metric.name
+        result = metric.calculate(level=metric_level, **kwargs)
+        if type(result) is dict:
+            for each_key in result.keys():
+                metric_results[metric_name + f"_{each_key}"] = result[each_key]
+        else:
+            metric_results[metric_name] = result
+
+    if 'loss' in kwargs:
+        metric_results[metric_prefix + 'Loss'] = kwargs['loss']
+    return metric_results
 
 
 def init_metric(metric_args, metric_name: str, solver_metric: bool, training_metrics: dict):

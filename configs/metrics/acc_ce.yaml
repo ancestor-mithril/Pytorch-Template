@@ -5,9 +5,3 @@ Accuracy:
   aggregator: 'mean'
   levels: ['epoch']
   higher_is_better: true
-
-crossentropyloss:
-  parameters:
-  aggregator: 'mean'
-  levels: ['epoch']
-  higher_is_better: False

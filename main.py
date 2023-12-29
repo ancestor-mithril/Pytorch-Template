@@ -2,6 +2,7 @@ import logging
 import os
 from functools import partial
 from shutil import copyfile
+from timeit import default_timer
 
 import hydra
 import pandas as pd
@@ -585,28 +586,34 @@ class Solver:
             while self.epoch < self.args.epochs:
                 logging.info(f"===> epoch: {self.epoch}/{self.args.epochs}")
 
+                start = default_timer()
                 train_results = self.simple_train()
+                end = default_timer()
 
-                metrics_results = {}
-                metrics_results = register_metrics(self.metrics, "train", "epoch", metrics_results, **train_results)
+                with torch.inference_mode():
+                    self.writer.add_scalar("Train/Time", end - start, self.epoch)
 
-                if self.val_loader is not None and self.epoch % self.args.val_every == 0:
-                    val_results = self.val(do_test=False)
-                    metrics_results = register_metrics(self.metrics, "val", "epoch", metrics_results, **val_results)
+                    metrics_results = {}
+                    metrics_results = register_metrics(self.metrics, "train", "epoch", metrics_results, **train_results)
 
-                if self.test_loader is not None and self.epoch % self.args.test_every == 0:
-                    test_results = self.val(do_test=True)
-                    metrics_results = register_metrics(self.metrics, "test", "epoch", metrics_results, **test_results)
+                    if self.val_loader is not None and self.epoch % self.args.val_every == 0:
+                        val_results = self.val(do_test=False)
+                        metrics_results = register_metrics(self.metrics, "val", "epoch", metrics_results, **val_results)
 
-                metrics_results = register_metrics(self.metrics, "solver", "epoch", metrics_results, solver=self)
+                    if self.test_loader is not None and self.epoch % self.args.test_every == 0:
+                        test_results = self.val(do_test=True)
+                        metrics_results = register_metrics(
+                            self.metrics, "test", "epoch", metrics_results, **test_results)
 
-                print_metrics(self.writer, metrics_results, self.epoch)
+                    metrics_results = register_metrics(self.metrics, "solver", "epoch", metrics_results, solver=self)
 
-                self.maybe_register_best(metrics_results, best_metrics)
-                self.maybe_save_model()
-                self.scheduler_step(metrics_results)
-                self.maybe_early_stopping(metrics_results)
-                self.epoch += 1
+                    print_metrics(self.writer, metrics_results, self.epoch)
+
+                    self.maybe_register_best(metrics_results, best_metrics)
+                    self.maybe_save_model()
+                    self.scheduler_step(metrics_results)
+                    self.maybe_early_stopping(metrics_results)
+                    self.epoch += 1
 
         except KeyboardInterrupt:
             pass
