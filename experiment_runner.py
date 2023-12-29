@@ -78,7 +78,7 @@ def generate_runs():
         400
     ]
     es_patiences = [
-        100000
+        20
     ]
     val_everys = [
         1
