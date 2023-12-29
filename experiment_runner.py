@@ -1,3 +1,4 @@
+import itertools
 import os
 import subprocess
 import sys
@@ -6,7 +7,7 @@ from concurrent.futures import ProcessPoolExecutor
 from datetime import date
 from multiprocessing import freeze_support, current_process
 
-processes_per_gpu = 2
+processes_per_gpu = 1
 gpu_count = 1
 
 run_index = 0
@@ -37,25 +38,73 @@ def run_command(command_idx):
             fp.write(command + '\n')
 
 
+def create_run(dataset, subset, model, optimizer, seed, epochs, es_patience, val_every, batch_size, scheduler_params):
+    scheduler, factor = scheduler_params
+    aux_save_dir = f"{optimizer}/{batch_size}/{scheduler}/{factor}"
+    return f" aux_save_dir={aux_save_dir}" \
+           f" dataset/train@train_dataset={dataset}" \
+           f" dataset/val@val_dataset={dataset}" \
+           f" train_dataset.subset={subset}" \
+           f" model={model}" \
+           f" model.parameters.dataset={dataset}" \
+           f" optimizer={optimizer}" \
+           f" scheduler={scheduler}" \
+           f" scheduler.{scheduler}.factor={factor}" \
+           f" seed={seed}" \
+           f" epochs={epochs}" \
+           f" es_patience={es_patience}" \
+           f" val_every={val_every}" \
+           f" train_dataset.batch_size={batch_size}" \
+           f" progress_bar=False"
+
+
 def generate_runs():
-    with open("experiments_to_run.txt", 'r') as f:
-        runs = [line.rstrip('\n') for line in f]
+    datasets = [
+        'cifar10', 'cifar100'
+    ]
+    subsets = [
+        0.0
+    ]
+    models = [
+        'PreResNet20'
+    ]
+    optimizers = [
+        'sgd'
+    ]
+    seeds = [
+        2525
+    ]
+    epochss = [
+        400
+    ]
+    es_patiences = [
+        100000
+    ]
+    val_everys = [
+        1
+    ]
+    batch_sizes = [
+        10, 30, 50
+    ]
+    schedulers = [
+        ('IncreaseBSOnPlateau', 1.5), ('IncreaseBSOnPlateau', 2.0),
+        ('IncreaseBSOnPlateau', 3.0), ('IncreaseBSOnPlateau', 5.0),
+
+        ('ReduceLROnPlateau', 0.2), ('ReduceLROnPlateau', 0.33),
+        ('ReduceLROnPlateau', 0.5), ('ReduceLROnPlateau', 0.66),
+    ]
+
+    runs = []
+    for dataset, subset, model, optimizer, seed, epochs, es_patience, val_every, batch_size, scheduler_params in \
+            itertools.product(
+                datasets, subsets, models, optimizers, seeds, epochss, es_patiences, val_everys, batch_sizes,
+                schedulers):
+        run = create_run(dataset=dataset, subset=subset, model=model, optimizer=optimizer, seed=seed, epochs=epochs,
+                         es_patience=es_patience,
+                         val_every=val_every, batch_size=batch_size, scheduler_params=scheduler_params)
+        runs.append(run)
 
     return [f"python main.py {i}" for i in runs]
-    aux_save_dir = f" aux_save_dir={aux_save_dir}"
-    f" dataset/train@train_dataset={dataset}"
-    f" dataset/val@val_dataset={dataset}"
-    f" train_dataset.subset={subset}"
-    f" model={model}"
-    f" model.parameters.num_classes={10 if dataset == 'cifar10' else 100}"
-    f" optimizer={optimizer}"
-    f" seed={seed}"
-    f" epochs={final_epochs}"
-    f" es_patience={final_es_patience}"
-    f" val_every={final_val_every}"
-    f" optimizer={optimizer}"
-    f" train_dataset.batch_size={batch_size}"
-    f" progress_bar=False"
 
 
 if __name__ == "__main__":
