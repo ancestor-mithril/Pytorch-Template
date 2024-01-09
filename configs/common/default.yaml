@@ -14,7 +14,7 @@ compile_args:
   options:
   disabled: False
 
-save_model: True
+save_model: False
 save_interval: 10
 
 epochs: 400

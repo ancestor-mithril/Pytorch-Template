@@ -22,6 +22,7 @@ def init_is_better(mode: str, min_delta: float, percentage: bool) -> callable:
 
 class EarlyStopping(object):
     def __init__(self, mode='min', min_delta=0, patience=10, percentage=False):
+        # TODO: Replace with library one, or add logging
         self.mode = mode
         self.min_delta = min_delta
         self.patience = patience

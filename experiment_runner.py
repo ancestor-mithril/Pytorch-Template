@@ -7,6 +7,7 @@ from concurrent.futures import ProcessPoolExecutor
 from datetime import date
 from multiprocessing import freeze_support, current_process
 
+
 processes_per_gpu = 1
 gpu_count = 1
 
@@ -29,12 +30,12 @@ def run_command(command_idx):
         start = time.time()
         with open(f"./logs/error_{idx}_{today}.txt", 'a+') as err:
             subprocess.run(command, shell=True, check=True, stderr=err)
-        os.remove(f"error_{idx}_{today}.txt")
+        os.remove(f"./logs/error_{idx}_{today}.txt")
         elapsed = (time.time() - start)
-        with open("finished_runs.txt", "a+") as fp:
+        with open("./logs/finished_runs.txt", "a+") as fp:
             fp.write(f"{idx} -> {today} -> " + str(elapsed) + "s + " + command + "\n")
     except subprocess.CalledProcessError:
-        with open(f"failed_runs_{today}.txt", "a+") as fp:
+        with open(f"./logs/failed_runs_{today}.txt", "a+") as fp:
             fp.write(command + '\n')
 
 
