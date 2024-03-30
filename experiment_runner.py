@@ -40,8 +40,17 @@ def run_command(command_idx):
 
 
 def create_run(dataset, subset, model, optimizer, seed, epochs, es_patience, val_every, batch_size, scheduler_params):
-    scheduler, factor = scheduler_params
-    aux_save_dir = f"{optimizer}/{batch_size}/{scheduler}/{factor}"
+    if scheduler_params[0] in ('IncreaseBSOnPlateau', 'ReduceLROnPlateau'):
+        scheduler, factor = scheduler_params
+        aux_save_dir = f"{optimizer}/{batch_size}/{scheduler}/{factor}"
+        scheduler_args = f"scheduler.{scheduler}.factor={factor}"
+    elif scheduler_params[0] in ('StepBS', 'StepLR'):
+        scheduler, step_size, gamma = scheduler_params
+        aux_save_dir = f"{optimizer}/{batch_size}/{scheduler}/{step_size}_{gamma}"
+        scheduler_args = f"scheduler.{scheduler}.step_size={step_size} scheduler.{scheduler}.gamma={gamma}"
+    else:
+        raise "Not implemented"
+
     return f" aux_save_dir={aux_save_dir}" \
            f" dataset/train@train_dataset={dataset}" \
            f" dataset/val@val_dataset={dataset}" \
@@ -50,7 +59,7 @@ def create_run(dataset, subset, model, optimizer, seed, epochs, es_patience, val
            f" model.parameters.dataset={dataset}" \
            f" optimizer={optimizer}" \
            f" scheduler={scheduler}" \
-           f" scheduler.{scheduler}.factor={factor}" \
+           f" {scheduler_args}" \
            f" seed={seed}" \
            f" epochs={epochs}" \
            f" es_patience={es_patience}" \
@@ -85,14 +94,17 @@ def generate_runs():
         1
     ]
     batch_sizes = [
-        10, 30, 50
+        10, # 30, # 50
     ]
     schedulers = [
-        ('IncreaseBSOnPlateau', 1.5), ('IncreaseBSOnPlateau', 2.0),
-        ('IncreaseBSOnPlateau', 3.0), ('IncreaseBSOnPlateau', 5.0),
+        # ('IncreaseBSOnPlateau', 1.5), ('IncreaseBSOnPlateau', 2.0),
+        # ('IncreaseBSOnPlateau', 3.0), ('IncreaseBSOnPlateau', 5.0),
+        #
+        # ('ReduceLROnPlateau', 0.2), ('ReduceLROnPlateau', 0.33),
+        # ('ReduceLROnPlateau', 0.5), ('ReduceLROnPlateau', 0.66),
+        ('StepBS', 30, 2.0), ('StepBS', 30, 4.0),
 
-        ('ReduceLROnPlateau', 0.2), ('ReduceLROnPlateau', 0.33),
-        ('ReduceLROnPlateau', 0.5), ('ReduceLROnPlateau', 0.66),
+        ('StepLR', 30, 0.5), ('StepLR', 30, 0.25),
     ]
 
     runs = []
