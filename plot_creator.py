@@ -48,7 +48,7 @@ def parse_tensorboard(path):
     max_train_accuracy = round(max(scalars['Train/Accuracy']) * 100, 2)
     max_val_accuracy = round(max(scalars['Val/Accuracy']) * 100, 2)
     initial_learning_rate = round(scalars['Solver/Learning Rate'][0], 2)
-
+    # TODO: Get train length
     return {
         'dataset': dataset,
         'scheduler': scheduler,

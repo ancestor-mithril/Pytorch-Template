@@ -85,7 +85,7 @@ def generate_runs():
         2525
     ]
     epochss = [
-        400
+        250
     ]
     es_patiences = [
         20
@@ -103,8 +103,10 @@ def generate_runs():
         # ('ReduceLROnPlateau', 0.2), ('ReduceLROnPlateau', 0.33),
         # ('ReduceLROnPlateau', 0.5), ('ReduceLROnPlateau', 0.66),
         ('StepBS', 30, 2.0), ('StepBS', 30, 4.0),
+        ('StepBS', 50, 2.0), ('StepBS', 50, 4.0),
 
         ('StepLR', 30, 0.5), ('StepLR', 30, 0.25),
+        ('StepLR', 50, 0.5), ('StepLR', 50, 0.25),
     ]
 
     runs = []

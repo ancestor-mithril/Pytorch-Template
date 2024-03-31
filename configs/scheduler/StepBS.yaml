@@ -5,6 +5,6 @@ name: StepBS
 StepBS:
   step_size: 30
   gamma: 2.0
-  max_batch_size: 512
+  max_batch_size: 600
 
 type: bs_scheduler
