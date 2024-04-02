@@ -1,0 +1,30 @@
+"restart_from_backup: false\naux_save_dir: sgd/10/StepLR/50_0.5\nstorage_dir: C:\\\
+  Users\\GeorgeS\\Documents\\facultate\\master\\projects\\data\nsave_dir: CIFAR-10/PreResNet/sgd/10/StepLR/50_0.5\\\
+  2525\nload_model: ''\nload_optimizer: ''\nload_training_state: ''\ninfer_only: false\n\
+  half: true\ngrad_scaler: false\ndevice: cuda:0\nseed: 2525\nprogress_bar: false\n\
+  compile: trace\ncompile_args:\n  fullgraph: false\n  dynamic: null\n  backend: inductor\n\
+  \  mode: null\n  options: null\n  disabled: false\nsave_model: false\nsave_interval:\
+  \ 10\nepochs: 250\nval_every: 1\nes_patience: 20\nes_min_delta: 0.0001\nes_metric:\
+  \ Train/Loss\nscheduler_metric: Train/Loss\noptimized_metric: Val/Accuracy\ntrain_dataset:\n\
+  \  name: CIFAR-10\n  load_params:\n    root: C:\\Users\\GeorgeS\\Documents\\facultate\\\
+  master\\projects\\data\n    train: true\n    download: true\n  save_in_memory: true\n\
+  \  shuffle: true\n  batch_size: 10\n  num_workers: 4\n  pin_memory: true\n  drop_last:\
+  \ true\n  subset: 0.0\n  update_every: 1\n  transform: train/cifar10\nval_dataset:\n\
+  \  name: CIFAR-10\n  load_params:\n    root: C:\\Users\\GeorgeS\\Documents\\facultate\\\
+  master\\projects\\data\n    train: false\n    download: true\n  save_in_memory:\
+  \ true\n  shuffle: false\n  batch_size: 512\n  num_workers: 4\n  pin_memory: true\n\
+  \  drop_last: false\n  subset: 0.0\n  transform: val/cifar10\ninitialization: 2\n\
+  initialization_batch_norm: true\nloss:\n  crossentropyloss:\n    class_weights:\
+  \ null\n    reduction: mean\ntrain_metrics:\n  Accuracy:\n    parameters: null\n\
+  \    aggregator: mean\n    levels:\n    - epoch\n    higher_is_better: true\nval_metrics:\n\
+  \  Accuracy:\n    parameters: null\n    aggregator: mean\n    levels:\n    - epoch\n\
+  \    higher_is_better: true\nsolver_metrics:\n  Model Norm:\n    parameters:\n \
+  \     norm_type: 2\n    aggregator: null\n    levels:\n    - epoch\n  Learning Rate:\n\
+  \    parameters: null\n    aggregator: null\n    levels:\n    - epoch\n  Batch Size:\n\
+  \    parameters: null\n    aggregator: null\n    levels:\n    - epoch\nmodel:\n\
+  \  name: PreResNet\n  parameters:\n    depth: 20\n    dataset: cifar10\noptimizer:\n\
+  \  name: SGD\n  parameters:\n    lr: 0.01\n    weight_decay: 0.0001\n    momentum:\
+  \ 0.9\n    nesterov: true\n  max_norm: 0.0\n  grad_penalty: 0.0\n  batch_replay:\
+  \ false\n  use_lookahead: false\n  lookahead_k: 5\n  lookahead_alpha: 0.5\n  use_SAM:\
+  \ false\n  SAM_rho: 0.5\nscheduler:\n  name: StepLR\n  StepLR:\n    step_size: 50\n\
+  \    gamma: 0.5\n  type: lr_scheduler\n"
