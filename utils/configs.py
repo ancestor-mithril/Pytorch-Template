@@ -59,7 +59,8 @@ def create_file_filter(gitignore_path: str | None = None) -> Tuple[str]:
         ignore_files.extend(lines)
 
     ignore_files += [
-        "venv/*", "multirun/*", "__pycache__/*", ".git/*", "data/*", "results/*", "*.txt", "*.md", 'outputs/*', '.git*'
+        "venv/*", "multirun/*", "__pycache__/*", ".git/*", "data/*", "results/*", "*.txt", "*.md", 'outputs/*', '.git*',
+        "*.png", "results_*", "outputs_*"
     ]
     return tuple(set(ignore_files))
 
