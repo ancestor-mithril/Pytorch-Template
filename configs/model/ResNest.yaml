@@ -1,0 +1,7 @@
+# @package model
+
+name: ResNest
+parameters:
+  num_classes: ${train_dataset.num_classes}
+  stem_width: 16
+  layers: [5, 5, 5, 5]

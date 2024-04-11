@@ -1,0 +1,13 @@
+# @package scheduler
+
+name: CyclicLR
+
+CyclicLR:
+  step_size_up: 10
+  gamma: 0.9
+  cycle_momentum: False
+  mode: "triangular2"
+  max_lr: 0.08
+  base_lr: 0.001
+
+type: lr_scheduler

@@ -113,12 +113,16 @@ class Solver:
             self.args.compile = 'script'
 
         if self.args.compile == 'trace':
-            self.model = torch.jit.trace(self.model, torch.rand((1, *self.train_set[0][0].shape), device=self.device))
+            input_t = torch.rand((2, *self.train_set[0][0].shape), device=self.device)
+            logging.info(f'Input shape: {input_t.shape}')
+            self.model = torch.jit.trace(self.model, input_t)
         elif self.args.compile == 'script':  # script
             self.model = torch.jit.script(self.model)
         elif self.args.compile == 'script-with-example':  # script
+            input_t = torch.rand((2, *self.train_set[0][0].shape), device=self.device)
+            logging.info(f'Input shape: {input_t.shape}')
             self.model = torch.jit.script(self.model, example_inputs=[
-                (torch.rand((1, *self.train_set[0][0].shape), device=self.device),)
+                (input_t,)
             ])
         elif self.args.compile == 'compile':
             self.model = torch.compile(self.model, **self.args.compile_args)

@@ -1,12 +1,28 @@
 import logging
-import os
 from collections import OrderedDict
-
+import timm
 import torch
 from omegaconf import OmegaConf
 from torch import nn
 
 import models
+
+
+def load_external_models(model_name, parameters):
+    model = None
+    if model_name == 'ResNest':
+        from resnest.torch.models.resnet import ResNet
+        from resnest.torch.models.resnet import Bottleneck
+
+        num_classes = parameters['num_classes']
+        layers = parameters['layers']
+        stem_width = parameters.get('stem_width', 32)
+        model = ResNet(Bottleneck, layers,
+                       num_classes=num_classes,
+                       radix=2, groups=1, bottleneck_width=64,
+                       deep_stem=True, stem_width=stem_width, avg_down=True,
+                       avd=True, avd_first=False)
+    return model
 
 
 def enable_bn(model):
@@ -22,13 +38,18 @@ def disable_bn(model):
 def init_model(model_args):
     parameters = OmegaConf.to_container(model_args.parameters, resolve=True)
     parameters = {k: v for k, v in parameters.items() if v is not None}
-    try:
-        model = getattr(models, model_args.name)
-    except:
-        logging.error(f"Model {model_args.name} does not exist!")
-        exit()
 
-    model = model(**parameters)
+    model = load_external_models(model_args.name, parameters)
+    logging.info(f"Loading model {model_args.name}, {'internal' if model is None else 'external'} implementation.")
+    if model is None:
+
+        try:
+            model = getattr(models, model_args.name)
+        except NameError:
+            logging.error(f"Model {model_args.name} does not exist!")
+            exit()
+
+        model = model(**parameters)
 
     return model
 

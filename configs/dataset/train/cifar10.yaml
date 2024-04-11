@@ -14,6 +14,8 @@ num_workers: 4
 pin_memory: true
 drop_last: true
 
+num_classes: 10
+
 subset: 0.0
 update_every: 1
 

@@ -4,7 +4,7 @@ half: True
 grad_scaler: False
 device: 'cuda:0'
 seed: 2525
-progress_bar: False
+progress_bar: True
 compile: 'trace'  # 'trace' or 'script' or 'script-with-example' or 'compile' or 'nothing'
 compile_args:
   fullgraph: False

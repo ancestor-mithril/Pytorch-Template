@@ -106,15 +106,16 @@ class PreResNet(nn.Module):
         return nn.Sequential(*layers)
 
     def forward(self, x: torch.Tensor):
-        x = self.conv1(x)
+        # 3, 32, 32
+        x = self.conv1(x)  # 16, 32, 32
 
-        x = self.layer1(x)  # 32x32
-        x = self.layer2(x)  # 16x16
-        x = self.layer3(x)  # 8x8
+        x = self.layer1(x)  # 64, 16, 16
+        x = self.layer2(x)  # 128, 8, 8
+        x = self.layer3(x)  # 256, 8, 8
         x = self.bn(x)
         x = self.relu(x)
 
-        x = self.avgpool(x)
+        x = self.avgpool(x)  # 256, 1, 1
         x = x.view(x.size(0), -1)
         x = self.fc(x)
 
