@@ -17,7 +17,7 @@ compile_args:
 save_model: False
 save_interval: 10
 
-epochs: 400
+epochs: 200
 val_every: 1
 es_patience: 100000
 es_min_delta: 0.0001

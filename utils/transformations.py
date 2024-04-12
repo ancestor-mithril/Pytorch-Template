@@ -7,7 +7,7 @@ import torch
 from hydra.utils import to_absolute_path
 from omegaconf import OmegaConf
 from torch import Tensor
-from torchvision import transforms as transforms
+from torchvision.transforms import v2
 from .randaugment import RandAugment  # TODO: Use library
 
 
@@ -29,11 +29,14 @@ def init_transforms(transform: str) -> Tuple[List[TransformWrapper], List[Transf
         else:
             runtime_transforms.append(transform)
 
+    logging.info(f'Cached transforms: {cached_transforms}.')
+    logging.info(f'Runtime transforms: {runtime_transforms}.')
     return cached_transforms, runtime_transforms
 
 
 class TransformWrapper:
     def __init__(self, transform, apply_to: str | None = None):
+        self.transform_name = f'{type(transform).__name__}({apply_to})'
         if apply_to is None:
             self.apply = lambda x: transform(x)
         elif apply_to == 'input':
@@ -45,6 +48,9 @@ class TransformWrapper:
 
     def __call__(self, data):
         return self.apply(data)
+
+    def __repr__(self):
+        return self.transform_name
 
 
 # TODO: Replace with library OneHot
@@ -116,34 +122,46 @@ class MinMaxNormalizationCached:
         return (tensor - self.minimum) / self.range
 
 
+class AutoAugment(v2.AutoAugment):
+    def _get_policies(self, policy: str):
+        if policy == 'cifar10':
+            return super()._get_policies(v2.AutoAugmentPolicy.CIFAR10)
+        if policy == 'imagenet':
+            return super()._get_policies(v2.AutoAugmentPolicy.IMAGENET)
+        raise super()._get_policies(policy)
+
 # Removed:
 # 1. LightingNoise
 # 2. LambdaTransform => Not useful, create real transform from it
 # 3. Identity => Not useful
-# 4. RandomErasing => replaced with torchvision.transforms.RandomErasing
-# 5. ImageRandomResizedCrop => replaced with torchvision.transforms.RandomResizedCrop
+# 4. RandomErasing => replaced with torchvision.v2.RandomErasing
+# 5. ImageRandomResizedCrop => replaced with torchvision.v2.RandomResizedCrop
 # 6. Half => we already have tensor type
 
-
+# !!! cacheable augmentations are used first
 transformations = {
     'ImageNormalize': {
-        'constructor': transforms.Normalize,
-        'cacheable': True,
+        'constructor': v2.Normalize,
+        'cacheable': False,
     },
     'ImageRandomCrop': {
-        'constructor': transforms.RandomCrop,
+        'constructor': v2.RandomCrop,
         'cacheable': False,
     },
     'ImageRandomResizedCrop': {
-        'constructor': transforms.RandomResizedCrop,
+        'constructor': v2.RandomResizedCrop,
         'cacheable': False,
     },
-    'ImageRandomHorizontalFlip': {
-        'constructor': transforms.RandomHorizontalFlip,
+    'RandomHorizontalFlip': {
+        'constructor': v2.RandomHorizontalFlip,
+        'cacheable': False,
+    },
+    'RandomVerticalFlip': {
+        'constructor': v2.RandomVerticalFlip,
         'cacheable': False,
     },
     'ImageToTensor': {
-        'constructor': transforms.ToTensor,
+        'constructor': v2.ToTensor,
         'cacheable': True,
     },
     'ToTensor': {
@@ -151,19 +169,19 @@ transformations = {
         'cacheable': True,
     },
     'ImageRandomRotation': {
-        'constructor': transforms.RandomRotation,
+        'constructor': v2.RandomRotation,
         'cacheable': False,
     },
     'ImageColorJitter': {
-        'constructor': transforms.ColorJitter,
+        'constructor': v2.ColorJitter,
         'cacheable': False,
     },
     'ImageResize': {
-        'constructor': transforms.Resize,
+        'constructor': v2.Resize,
         'cacheable': True,
     },
     'ImageCenterCrop': {
-        'constructor': transforms.CenterCrop,
+        'constructor': v2.CenterCrop,
         'cacheable': True,
     },
     'Resize': {
@@ -179,7 +197,7 @@ transformations = {
         'cacheable': False,
     },
     'RandomErasing': {
-        'constructor': transforms.RandomErasing,
+        'constructor': v2.RandomErasing,
         'cacheable': False,
     },
     'Unsqueeze': {
@@ -201,5 +219,9 @@ transformations = {
     'MinMaxNormalizationCached': {
         'constructor': MinMaxNormalizationCached,
         'cacheable': True,
+    },
+    'AutoAugment': {
+        'constructor': AutoAugment,
+        'cacheable': False,
     },
 }

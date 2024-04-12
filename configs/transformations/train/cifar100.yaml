@@ -1,11 +1,14 @@
 # @package transformations
 
-ImageRandomCrop:
-  size: 32
-  padding: 4
+#ImageRandomCrop:
+#  size: 32
+#  padding: 4
+#  apply_to: 'input'
+
+RandomHorizontalFlip:
   apply_to: 'input'
 
-ImageRandomHorizontalFlip:
+RandomVerticalFlip:
   apply_to: 'input'
 
 ImageToTensor:
