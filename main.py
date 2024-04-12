@@ -497,6 +497,7 @@ class Solver:
             predictions.extend(output.detach().cpu())
             targets.extend(target.cpu())
 
+        torch.cuda.empty_cache()
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,
             "target": torch.stack(targets) if len(targets) else targets,
@@ -537,6 +538,7 @@ class Solver:
 
             self.save_batch_metrics(output, target, "train")
 
+        torch.cuda.empty_cache()
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,
             "target": torch.stack(targets) if len(targets) else targets,
@@ -575,6 +577,7 @@ class Solver:
 
             # self.save_batch_metrics(output, target, metric_type)
 
+        torch.cuda.empty_cache()
         return {
             "prediction": torch.stack(predictions) if len(predictions) else predictions,
             "target": torch.stack(targets) if len(targets) else targets,
