@@ -5,11 +5,11 @@
 #  padding: 4
 #  apply_to: 'input'
 
-#RandomHorizontalFlip:
-#  apply_to: 'input'
-#
-#RandomVerticalFlip:
-#  apply_to: 'input'
+RandomHorizontalFlip:
+  apply_to: 'input'
+
+RandomVerticalFlip:
+  apply_to: 'input'
 
 ImageToTensor:
   apply_to: 'input'

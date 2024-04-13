@@ -1,0 +1,6 @@
+# @package model
+
+name: PreResNet
+parameters:
+  depth: 29
+  dataset: 'cifar10'

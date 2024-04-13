@@ -13,7 +13,7 @@ defaults:
   - metrics@train_metrics: [acc_ce] 
   - metrics@val_metrics: [acc_ce] 
   - metrics@solver_metrics: [solver] 
-  - model: ResNest
+  - model: PreResNet29
   - optimizer: sgd 
   - scheduler: ReduceLROnPlateau
   - override hydra/sweeper: basic   # nevergrad | basic

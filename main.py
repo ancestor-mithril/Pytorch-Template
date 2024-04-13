@@ -182,10 +182,11 @@ class Solver:
                     best_metrics[self.args.optimized_metric] = metrics_results[self.args.optimized_metric]
                     save_best_metric = True
 
-            if save_best_metric and self.args.save_model:
+            if save_best_metric:
                 best = best_metrics[self.args.optimized_metric]
-                self.save(self.epoch, best)
                 logging.info(f"===> BEST {self.args.optimized_metric} PERFORMANCE: {best:.5f}")
+                if self.args.save_model:
+                    self.save(self.epoch, best)
 
     def maybe_save_model(self):
         if self.args.save_model and self.epoch % self.args.save_interval == 0:
@@ -475,6 +476,7 @@ class Solver:
         loss_sum = 0.0
         for data, target in self.prepare_loader(self.train_loader):
             data = data.to(self.device, non_blocking=True)
+            targets.extend(target)
             target = target.to(self.device, non_blocking=True)
 
             with autocast(enabled=self.args.half, device_type=self.device_type):
@@ -495,7 +497,6 @@ class Solver:
             # predictions.extend(output.cpu())
 
             predictions.extend(output.detach().cpu())
-            targets.extend(target.cpu())
 
         torch.cuda.empty_cache()
         return {
@@ -517,6 +518,7 @@ class Solver:
 
         for data, target in self.prepare_loader(self.train_loader):
             data = to_device(data, self.device)
+            targets.extend(target)
             target = to_device(target, self.device)
 
             while True:
@@ -534,7 +536,6 @@ class Solver:
 
             output = output.detach()
             predictions.extend(output.cpu())
-            targets.extend(target.cpu())
 
             self.save_batch_metrics(output, target, "train")
 
@@ -566,13 +567,13 @@ class Solver:
 
         for data, target in self.prepare_loader(loader):
             data = to_device(data, self.device)
+            targets.extend(target)
             target = to_device(target, self.device)
 
             with autocast(enabled=self.args.half, device_type=self.device_type):
                 output, loss = self.train_get_output_and_loss(data, target, hidden, is_train=False)
 
-            predictions.extend(output)
-            targets.extend(target)
+            predictions.extend(output.cpu())
             loss_sum += loss.item()
 
             # self.save_batch_metrics(output, target, metric_type)
