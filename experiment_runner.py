@@ -129,5 +129,10 @@ if __name__ == "__main__":
     if last_index == -1 or last_index > len(runs):
         last_index = len(runs)
 
+    with open("./logs/finished_runs.txt", "a+") as fp:
+        fp.write("New experiment: ")
+        fp.write("\n")
     with ProcessPoolExecutor(max_workers=gpu_count * processes_per_gpu) as executor:
         executor.map(run_command, [(runs[index], index) for index in range(run_index, last_index)])
+    with open("./logs/finished_runs.txt", "a+") as fp:
+        fp.write("\n")
